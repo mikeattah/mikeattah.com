@@ -7,7 +7,7 @@ export default function Navbar() {
     <nav className={styles.navbar}>
       <div className={styles.container}>
         <div className={styles.imagecontainer}>
-          <Link href="/">
+          <Link href="/" passHref>
             <Image
               src="/mikeattah002.jpg"
               width="52"
