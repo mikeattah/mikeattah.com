@@ -8,7 +8,12 @@ export default function Navbar() {
       <div className={styles.container}>
         <div className={styles.imagecontainer}>
           <Link href="/">
-            <Image src="/mikeattah002.jpg" width="52" height="52" />
+            <Image
+              src="/mikeattah002.jpg"
+              width="52"
+              height="52"
+              alt="Mike Attah"
+            />
           </Link>
         </div>
         <div className={styles.navitems}>

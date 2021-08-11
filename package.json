@@ -18,6 +18,7 @@
     "sass": "^1.37.5"
   },
   "devDependencies": {
+    "cross-env": "^7.0.3",
     "eslint": "7.31.0",
     "eslint-config-next": "11.0.1"
   }
