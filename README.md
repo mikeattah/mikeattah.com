@@ -2,7 +2,7 @@
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-Pls visit [https://mikeattah.com](https://mikeattah.com) for more details.
+Pls visit [https://mikeattah.com](https://mikeattah.com) to view site.
 
 I'm also searching for a new job!
 

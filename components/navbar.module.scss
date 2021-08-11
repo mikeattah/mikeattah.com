@@ -1,11 +1,35 @@
-.container {
-  max-height: 5vh;
+.navbar {
+  height: 7%;
+  width: 100%;
 }
 
-.navbar {
-  background-color: black;
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+}
+
+.imagecontainer {
+  height: 100%;
+  width: 7%;
+}
+
+.navitems {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  height: 100%;
+  width: 93%;
 }
 
 .brand {
+  display: block;
+  width: 20%;
+  height: 100%;
   color: white;
+  &:hover {
+    background-color: white;
+    color: black;
+  }
 }
