@@ -1,4 +1,10 @@
 .container {
   max-height: 100vh;
   max-width: 100vw;
+  flex-direction: column;
+}
+
+.main {
+  height: 86vh;
+  width: 100vw;
 }

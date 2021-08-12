@@ -1,12 +1,25 @@
+import Head from "next/head";
 import Navbar from "./navbar";
 import Footer from "./footer";
 import styles from "./layout.module.scss";
 
-export default function Layout({ children }) {
+export default function Layout({
+  children,
+  pageTitle,
+  pageDescription,
+  ...props
+}) {
   return (
     <div className={styles.container}>
+      <Head>
+        <title>{pageTitle}</title>
+        <meta charset="utf-8" />
+        <meta name="description" content={pageDescription} />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <Navbar />
-      <main>{children}</main>
+      <main className={styles.main}>{children}</main>
       <Footer />
     </div>
   );
