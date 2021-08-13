@@ -24,28 +24,28 @@ export default function Navbar() {
       </div>
       <div className={styles.navitems}>
         <Link href="/" passHref>
-          <div className={styles.brand}>
+          <a className={styles.brand}>
             <FontAwesomeIcon icon={faHome} className={styles.icons} />
-            <p>Home</p>
-          </div>
+            <span>Home</span>
+          </a>
         </Link>
         <Link href="/about" passHref>
-          <div className={styles.brand}>
+          <a className={styles.brand}>
             <FontAwesomeIcon icon={faUser} className={styles.icons} />
-            <p>About</p>
-          </div>
+            <span>About</span>
+          </a>
         </Link>
         <Link href="/projects" passHref>
-          <div className={styles.brand}>
+          <a className={styles.brand}>
             <FontAwesomeIcon icon={faCogs} className={styles.icons} />
-            <p>Projects</p>
-          </div>
+            <span>Projects</span>
+          </a>
         </Link>
         <Link href="/contact" passHref>
-          <div className={styles.brand}>
+          <a className={styles.brand}>
             <FontAwesomeIcon icon={faPhoneSquare} className={styles.icons} />
-            <p>Contact</p>
-          </div>
+            <span>Contact</span>
+          </a>
         </Link>
       </div>
     </nav>
