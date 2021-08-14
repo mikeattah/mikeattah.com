@@ -13,7 +13,7 @@ export default function Layout({
     <div className={styles.container}>
       <Head>
         <title>{pageTitle}</title>
-        <meta charset="utf-8" />
+        <meta charSet="utf-8" />
         <meta name="description" content={pageDescription} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
