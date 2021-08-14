@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styles from "../styles/Projects.module.scss";
-import Layout from "../components/layout";
+import Layout from "../components/layout.js";
 
 export default function Projects({ title, description, ...props }) {
   return (

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styles from "../styles/Contact.module.scss";
-import Layout from "../components/layout";
+import Layout from "../components/layout.js";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
   faCoffee,

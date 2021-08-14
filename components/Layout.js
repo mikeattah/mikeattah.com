@@ -1,6 +1,6 @@
 import Head from "next/head";
-import Navbar from "./navbar";
-import Footer from "./footer";
+import Navbar from "./navbar.js";
+import Footer from "./footer.js";
 import styles from "./layout.module.scss";
 
 export default function Layout({

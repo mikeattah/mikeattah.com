@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styles from "../styles/About.module.scss";
-import Layout from "../components/layout";
+import Layout from "../components/layout.js";
 
 export default function About({ title, description, ...props }) {
   return (
