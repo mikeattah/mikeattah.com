@@ -6,7 +6,25 @@ export default function Projects({ title, description, ...props }) {
   return (
     <Layout pageTitle={`${title} | Projects`}>
       <div className={styles.container}>
-        <main></main>
+        <div className={styles.projecttitle}>
+          <h1>My Projects</h1>
+        </div>
+        <div className={styles.projectgroup}>
+          <div className={styles.project}></div>
+          <div className={styles.project}></div>
+          <div className={styles.project}></div>
+          <div className={styles.project}></div>
+        </div>
+        <div className={styles.projectbutton}>
+          <a
+            className={styles.showall}
+            href="https://codesandbox.io/u/mikeattah"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Show All
+          </a>
+        </div>
       </div>
     </Layout>
   );

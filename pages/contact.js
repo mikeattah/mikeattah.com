@@ -18,16 +18,18 @@ export default function Contact({ title, description, ...props }) {
     <Layout pageTitle={`${title} | Contact`}>
       <div className={styles.container}>
         <div className={styles.workcontainer}>
-          <p className={styles.work}>Let&apos;s work together...</p>
-          <p className={styles.coffeetext}>
-            How do you like your coffee?{" "}
-            <FontAwesomeIcon icon={faCoffee} className={styles.coffee} />
-            <span className={styles.watertext}>Drink water!</span>
-          </p>
+          <p className={styles.workone}>Let&apos;s work together...</p>
+          <div className={styles.worktwo}>
+            <span className={styles.coffeetext}>
+              How do you like your coffee?
+            </span>
+            {/* <FontAwesomeIcon icon={faCoffee} className={styles.coffee} /> */}
+          </div>
+          {/* <span className={styles.watertext}>Drink water!</span> */}
         </div>
         <div className={styles.profilecontainer}>
           <a
-            className={styles.profilelink}
+            className={[`${styles.profilelink}, ${styles.github}`]}
             href="https://github.com/mikeattah"
             target="_blank"
             rel="noreferrer"
@@ -39,7 +41,7 @@ export default function Contact({ title, description, ...props }) {
             <span className={styles.text}>GitHub</span>
           </a>
           <a
-            className={styles.profilelink}
+            className={[styles.profilelink, styles.linkedin]}
             href="https://www.linkedin.com/in/mikeattah/"
             target="_blank"
             rel="noreferrer"
@@ -51,7 +53,7 @@ export default function Contact({ title, description, ...props }) {
             <span className={styles.text}>LinkedIn</span>
           </a>
           <a
-            className={styles.profilelink}
+            className={[styles.profilelink, styles.twitter]}
             href="https://twitter.com/mikeattah_"
             target="_blank"
             rel="noreferrer"
@@ -62,11 +64,17 @@ export default function Contact({ title, description, ...props }) {
             />
             <span className={styles.text}>Twitter</span>
           </a>
-          <a className={styles.profilelink} href="mailto:mailenemona@gmail.com">
+          <a
+            className={[styles.profilelink, styles.mail]}
+            href="mailto:mailenemona@gmail.com"
+          >
             <FontAwesomeIcon icon={faAt} className={styles.profile} />
             <span className={styles.text}>Mail</span>
           </a>
-          <a className={styles.profilelink} href="tel:+2347013194373">
+          <a
+            className={[styles.profilelink, styles.call]}
+            href="tel:+2347013194373"
+          >
             <FontAwesomeIcon icon={faMobile} className={styles.profile} />
             <span className={styles.text}>Call</span>
           </a>
