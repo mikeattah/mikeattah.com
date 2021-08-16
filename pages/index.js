@@ -10,7 +10,7 @@ export default function Home({ title, description, ...props }) {
           <h1 className={styles.title}>
             Hi I&apos;m <span>Mike!</span>
           </h1>
-          <h3 className={styles.description}>a frontend developer</h3>
+          <h3 className={styles.description}>I build web apps</h3>
         </main>
       </div>
     </Layout>

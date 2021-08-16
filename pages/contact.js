@@ -82,7 +82,7 @@ export default function Contact({ title, description, ...props }) {
         <div className={styles.resumecontainer}>
           <a
             className={styles.resumebutton}
-            href="/mike_attah_resume.pdf"
+            href="/mike_attah_resume_002.pdf"
             download
           >
             <FontAwesomeIcon icon={faDownload} className={styles.resumeicon} />

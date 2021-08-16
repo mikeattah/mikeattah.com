@@ -1,8 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Charmonman&family=Montez&family=Montserrat&family=Roboto&family=Sacramento&family=WindSong&display=swap");
+
 .container {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  align-items: space-around;
+  justify-content: space-evenly;
+  align-items: space-evenly;
   flex-wrap: wrap;
   height: 100%;
   width: 100%;
@@ -17,12 +19,15 @@
   width: 100%;
   margin: 0;
   padding: 0;
+  font-family: "WindSong", cursive;
+  // font-family: "Sacramento", cursive;
+  font-weight: lighter;
 }
 
 .projectgroup {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   height: 85%;
   width: 100%;
@@ -32,6 +37,11 @@
   height: 80%;
   width: 22%;
   border: 1px solid #ccc;
+  border-radius: 10px;
+  &:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+  }
 }
 
 .projectbutton {

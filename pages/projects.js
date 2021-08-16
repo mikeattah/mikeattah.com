@@ -7,13 +7,13 @@ export default function Projects({ title, description, ...props }) {
     <Layout pageTitle={`${title} | Projects`}>
       <div className={styles.container}>
         <div className={styles.projecttitle}>
-          <h1>My Projects</h1>
+          <h1>Some of my projects</h1>
         </div>
         <div className={styles.projectgroup}>
-          <div className={styles.project}></div>
-          <div className={styles.project}></div>
-          <div className={styles.project}></div>
-          <div className={styles.project}></div>
+          <a className={styles.project}></a>
+          <a className={styles.project}></a>
+          <a className={styles.project}></a>
+          <a className={styles.project}></a>
         </div>
         <div className={styles.projectbutton}>
           <a
