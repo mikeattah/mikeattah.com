@@ -23,15 +23,59 @@ export default function Projects({ title, description, ...props }) {
           <a className={styles.project}>
             <Image
               src="/projects/random-quote-machine.jpg"
-              width="100"
-              height="100"
+              width="338"
+              height="380"
               alt="Random Quote Machine"
+              className={styles.projectimage}
             />
-            <span></span>
+            <div className={styles.projectcaption}>
+              <span>
+                <i>&#8810;</i>Random Quote Machine<i>&#8811;</i>
+              </span>
+            </div>
           </a>
-          <a className={styles.project}></a>
-          <a className={styles.project}></a>
-          <a className={styles.project}></a>
+          <a className={styles.project}>
+            <Image
+              src="/projects/random-quote-machine.jpg"
+              width="338"
+              height="380"
+              alt="Random Quote Machine"
+              className={styles.projectimage}
+            />
+            <div className={styles.projectcaption}>
+              <span>
+                <i>&#8810;</i>Random Quote Machine<i>&#8811;</i>
+              </span>
+            </div>
+          </a>
+          <a className={styles.project}>
+            <Image
+              src="/projects/random-quote-machine.jpg"
+              width="338"
+              height="380"
+              alt="Random Quote Machine"
+              className={styles.projectimage}
+            />
+            <div className={styles.projectcaption}>
+              <span>
+                <i>&#8810;</i>Random Quote Machine<i>&#8811;</i>
+              </span>
+            </div>
+          </a>
+          <a className={styles.project}>
+            <Image
+              src="/projects/random-quote-machine.jpg"
+              width="338"
+              height="380"
+              alt="Random Quote Machine"
+              className={styles.projectimage}
+            />
+            <div className={styles.projectcaption}>
+              <span>
+                <i>&#8810;</i>Random Quote Machine<i>&#8811;</i>
+              </span>
+            </div>
+          </a>
         </div>
         <div className={styles.projectbutton}>
           <a

@@ -36,12 +36,55 @@
 .project {
   height: 80%;
   width: 22%;
-  border: 1px solid #ccc;
   border-radius: 10px;
-  &:hover {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    cursor: pointer;
+  background-color: black;
+  margin: 0;
+  padding: 0;
+
+  span {
+    margin: 0;
+    padding: 0;
   }
+
+  i {
+    visibility: hidden;
+    color: red;
+    margin: 0;
+    padding: 0;
+  }
+
+  &:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+
+    i {
+      visibility: visible;
+    }
+  }
+}
+
+.projectimage {
+  display: block;
+  border-top-left-radius: 10px 10px;
+  border-top-right-radius: 10px 10px;
+  height: 90%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.projectcaption {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 10%;
+  width: 100%;
+  text-align: center;
+  font-size: 1.25rem;
+  color: white;
+  padding: 0;
+  margin: 0;
+  transition: all 0.6s;
 }
 
 .projectbutton {
@@ -82,4 +125,11 @@
   height: 60%;
   margin: 0;
   padding: 0;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
 }

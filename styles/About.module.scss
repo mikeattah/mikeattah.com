@@ -13,6 +13,7 @@
   height: 80%;
   width: 25%;
   border: 1px solid black;
+  border-radius: 20px;
 }
 
 .content {
@@ -27,7 +28,7 @@
   font-family: "Sacramento", cursive;
   font-size: 1.3rem;
   border: 1px solid black;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
 .contenttop {
@@ -42,4 +43,11 @@
   width: 100%;
   margin: 0;
   padding: 0 20px 0 20px;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
 }
