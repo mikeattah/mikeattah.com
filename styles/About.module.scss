@@ -24,11 +24,16 @@
   height: 80%;
   width: 60%;
   padding: 0;
-  // border: 1px solid black;
-  font-family: "Sacramento", cursive;
+  font-family: "Roboto", "Montserrat", "Sans Serif";
   font-size: 1.3rem;
   border: 1px solid black;
   border-radius: 20px;
+  text-align: justify;
+
+  p {
+    padding: 0;
+    margin: 15px 0;
+  }
 }
 
 .contenttop {
@@ -43,6 +48,72 @@
   width: 100%;
   margin: 0;
   padding: 0 20px 0 20px;
+}
+
+.toolsone {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.toolstwo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 42%;
+}
+
+.toolsthree {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 10%;
+}
+
+.links {
+  color: #0070f3;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.resumebutton {
+  position: absolute;
+  top: 77.7vh;
+  left: 85.5vw;
+  height: 50px;
+  width: 145px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0 13px 0 0;
+  margin: 0;
+  font-size: 1.5rem;
+  background-color: #0070f3;
+  border: 2px solid #0070f3;
+  border-radius: 15px;
+  transition: all 0.4s;
+
+  &:hover {
+    cursor: pointer;
+    background-color: white;
+    color: #0070f3;
+  }
+}
+
+.resumeicon {
+  width: 45%;
+  height: 45%;
+  margin: 0;
+  padding: 0;
+}
+
+.resumetext {
+  margin: 0;
+  padding: 0;
 }
 
 @media (max-width: 600px) {

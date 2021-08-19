@@ -29,64 +29,48 @@ export default function Contact({ title, description, ...props }) {
         </div>
         <div className={styles.profilecontainer}>
           <a
-            className={[`${styles.profilelink}, ${styles.github}`]}
+            className={styles.githubprofile}
             href="https://github.com/mikeattah"
             target="_blank"
             rel="noreferrer"
           >
             <FontAwesomeIcon
               icon={["fab", "github"]}
-              className={styles.profile}
+              className={styles.profileicon}
             />
-            <span className={styles.text}>GitHub</span>
+            <span className={styles.profiletext}>GitHub</span>
           </a>
           <a
-            className={[styles.profilelink, styles.linkedin]}
+            className={styles.linkedinprofile}
             href="https://www.linkedin.com/in/mikeattah/"
             target="_blank"
             rel="noreferrer"
           >
             <FontAwesomeIcon
               icon={["fab", "linkedin"]}
-              className={styles.profile}
+              className={styles.profileicon}
             />
-            <span className={styles.text}>LinkedIn</span>
+            <span className={styles.profiletext}>LinkedIn</span>
           </a>
           <a
-            className={[styles.profilelink, styles.twitter]}
+            className={styles.twitterprofile}
             href="https://twitter.com/mikeattah_"
             target="_blank"
             rel="noreferrer"
           >
             <FontAwesomeIcon
               icon={["fab", "twitter"]}
-              className={styles.profile}
+              className={styles.profileicon}
             />
-            <span className={styles.text}>Twitter</span>
+            <span className={styles.profiletext}>Twitter</span>
           </a>
-          <a
-            className={[styles.profilelink, styles.mail]}
-            href="mailto:mailenemona@gmail.com"
-          >
-            <FontAwesomeIcon icon={faAt} className={styles.profile} />
-            <span className={styles.text}>Mail</span>
+          <a className={styles.maillink} href="mailto:mailenemona@gmail.com">
+            <FontAwesomeIcon icon={faAt} className={styles.profileicon} />
+            <span className={styles.profiletext}>Mail</span>
           </a>
-          <a
-            className={[styles.profilelink, styles.call]}
-            href="tel:+2347013194373"
-          >
-            <FontAwesomeIcon icon={faMobile} className={styles.profile} />
-            <span className={styles.text}>Call</span>
-          </a>
-        </div>
-        <div className={styles.resumecontainer}>
-          <a
-            className={styles.resumebutton}
-            href="/mike_attah_resume_002.pdf"
-            download
-          >
-            <FontAwesomeIcon icon={faDownload} className={styles.resumeicon} />
-            <span className={styles.resumetext}>Resume</span>
+          <a className={styles.calllink} href="tel:+2347013194373">
+            <FontAwesomeIcon icon={faMobile} className={styles.profileicon} />
+            <span className={styles.profiletext}>Call</span>
           </a>
         </div>
       </div>

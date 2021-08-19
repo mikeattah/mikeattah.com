@@ -23,8 +23,8 @@ export default function Projects({ title, description, ...props }) {
           <a className={styles.project}>
             <Image
               src="/projects/random-quote-machine.jpg"
-              width="338"
-              height="380"
+              width="461"
+              height="210"
               alt="Random Quote Machine"
               className={styles.projectimage}
             />
@@ -37,8 +37,8 @@ export default function Projects({ title, description, ...props }) {
           <a className={styles.project}>
             <Image
               src="/projects/random-quote-machine.jpg"
-              width="338"
-              height="380"
+              width="461"
+              height="210"
               alt="Random Quote Machine"
               className={styles.projectimage}
             />
@@ -51,8 +51,8 @@ export default function Projects({ title, description, ...props }) {
           <a className={styles.project}>
             <Image
               src="/projects/random-quote-machine.jpg"
-              width="338"
-              height="380"
+              width="461"
+              height="210"
               alt="Random Quote Machine"
               className={styles.projectimage}
             />
@@ -65,8 +65,36 @@ export default function Projects({ title, description, ...props }) {
           <a className={styles.project}>
             <Image
               src="/projects/random-quote-machine.jpg"
-              width="338"
-              height="380"
+              width="461"
+              height="210"
+              alt="Random Quote Machine"
+              className={styles.projectimage}
+            />
+            <div className={styles.projectcaption}>
+              <span>
+                <i>&#8810;</i>Random Quote Machine<i>&#8811;</i>
+              </span>
+            </div>
+          </a>
+          <a className={styles.project}>
+            <Image
+              src="/projects/random-quote-machine.jpg"
+              width="461"
+              height="210"
+              alt="Random Quote Machine"
+              className={styles.projectimage}
+            />
+            <div className={styles.projectcaption}>
+              <span>
+                <i>&#8810;</i>Random Quote Machine<i>&#8811;</i>
+              </span>
+            </div>
+          </a>
+          <a className={styles.project}>
+            <Image
+              src="/projects/random-quote-machine.jpg"
+              width="461"
+              height="210"
               alt="Random Quote Machine"
               className={styles.projectimage}
             />
