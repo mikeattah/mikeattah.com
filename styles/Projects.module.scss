@@ -19,7 +19,6 @@
   margin: 0;
   padding: 10px 0 0 0;
   font-family: "WindSong", cursive;
-  // font-family: "Sacramento", cursive;
   font-weight: lighter;
   font-size: 0.9rem;
 }
@@ -41,26 +40,22 @@
   background-color: black;
   margin: 0;
   padding: 0;
+  transition: all 0.4s;
 
   span {
     margin: 0;
     padding: 0;
   }
 
-  i {
-    visibility: hidden;
-    color: #0070f3;
-    margin: 0;
-    padding: 0;
-  }
-
   &:hover {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
-    border: 1px solid black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+    border: 2px solid #0070f3;
+    background-color: #0070f3;
     cursor: pointer;
 
-    i {
-      visibility: visible;
+    span {
+      color: black;
+      font-weight: bold;
     }
   }
 }
@@ -103,36 +98,46 @@
 
 .showall {
   height: 65%;
-  width: 10%;
+  width: 9%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 0;
+  padding: 0 0 0 4px;
   margin: 0;
-  font-size: 1.5rem;
-  background-color: #0070f3;
-  border: 2px solid #0070f3;
-  border-radius: 15px;
+  font-size: 1.45rem;
+  background-color: black;
+  color: white;
+  border: 2px solid black;
+  border-radius: 12px;
   transition: all 0.4s;
+
+  span {
+    flex-grow: 1;
+    margin: 0;
+    padding: 0;
+  }
 
   &:hover {
     cursor: pointer;
-    background-color: white;
-    color: #0070f3;
+    border: 2px solid #0070f3;
+    background-color: #0070f3;
+    color: black;
+    font-weight: bold;
+    width: 9.1%;
   }
 }
 
 .showallicon {
-  width: 60%;
+  width: 10%;
   height: 60%;
   margin: 0;
   padding: 0;
+  flex-grow: 1;
 }
 
 @media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
+  .mobile {
+    display: none;
   }
 }

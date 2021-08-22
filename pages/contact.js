@@ -73,6 +73,22 @@ export default function Contact({ title, description, ...props }) {
             <span className={styles.profiletext}>Call</span>
           </a>
         </div>
+        <div className={styles.emoticon}>
+          <Image src="/cool.png" height="100" width="100" alt="cool emoticon" />
+          <div className={styles.attribute}>
+            Stickers made by{" "}
+            <a
+              href="https://www.flaticon.com/authors/stickers"
+              title="Stickers"
+            >
+              Stickers
+            </a>{" "}
+            from{" "}
+            <a href="https://www.flaticon.com/" title="Flaticon">
+              www.flaticon.com
+            </a>
+          </div>
+        </div>
       </div>
     </Layout>
   );

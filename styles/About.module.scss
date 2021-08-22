@@ -10,10 +10,16 @@
 }
 
 .image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   height: 80%;
   width: 25%;
-  border: 1px solid black;
+  border: 5px solid;
+  border-image: repeating-linear-gradient(45deg, #0070f3, pink 4%) 15;
   border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
 }
 
 .content {
@@ -24,11 +30,13 @@
   height: 80%;
   width: 60%;
   padding: 0;
-  font-family: "Roboto", "Montserrat", "Sans Serif";
+  font-family: "Roboto", "Montserrat", sans-serif;
   font-size: 1.3rem;
-  border: 1px solid black;
-  border-radius: 20px;
   text-align: justify;
+  border: 5px solid;
+  border-image: repeating-linear-gradient(45deg, #0070f3, pink 4%) 15;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
 
   p {
     padding: 0;
@@ -71,7 +79,13 @@
   width: 10%;
 }
 
+.tool {
+  font-weight: bold;
+  color: #0070f3;
+}
+
 .links {
+  font-weight: bold;
   color: #0070f3;
 
   &:hover {
@@ -81,8 +95,8 @@
 
 .resumebutton {
   position: absolute;
-  top: 77.7vh;
-  left: 85.5vw;
+  top: 75.7vh;
+  left: 84.5vw;
   height: 50px;
   width: 145px;
   display: flex;
@@ -117,8 +131,129 @@
 }
 
 @media (max-width: 600px) {
-  .grid {
-    width: 100%;
+  .container {
+    display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+
+  .image {
+    height: 45%;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 20px;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 45%;
+    width: 100%;
+    padding: 0;
+    font-family: "Roboto", "Montserrat", "Sans Serif";
+    font-size: 1.3rem;
+    border: 1px solid black;
+    border-radius: 20px;
+    text-align: justify;
+
+    p {
+      padding: 0;
+      margin: 15px 0;
+      word-wrap: break-word;
+    }
+  }
+
+  .contenttop {
+    height: 50%;
+    width: 100%;
+    margin: 0;
+    padding: 10px 20px 0 20px;
+  }
+
+  .contentbottom {
+    height: 50%;
+    width: 100%;
+    margin: 0;
+    padding: 0 20px 0 20px;
+  }
+
+  .toolsone {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .toolstwo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 42%;
+  }
+
+  .toolsthree {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 10%;
+  }
+
+  .links {
+    color: #0070f3;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .resumebutton {
+    position: absolute;
+    top: 77.7vh;
+    left: 85.5vw;
+    height: 50px;
+    width: 145px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0 13px 0 0;
+    margin: 0;
+    font-size: 1.5rem;
+    background-color: #0070f3;
+    border: 2px solid #0070f3;
+    border-radius: 15px;
+    transition: all 0.4s;
+
+    &:hover {
+      cursor: pointer;
+      background-color: white;
+      color: #0070f3;
+    }
+  }
+
+  .resumeicon {
+    width: 45%;
+    height: 45%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .resumetext {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }

@@ -15,6 +15,7 @@ export default function Footer() {
         alt="CSS3 icon by Icons8"
         width="45"
         height="45"
+        className={styles.image}
       />
       <Image
         src="/icons8-sass.svg"
@@ -27,6 +28,7 @@ export default function Footer() {
         alt="Bootstrap icon by Icons8"
         width="45"
         height="45"
+        className={styles.image}
       />
       <Image
         src="/icons8-javascript.svg"
@@ -39,6 +41,7 @@ export default function Footer() {
         alt="JQuery icon by Icons8"
         width="45"
         height="45"
+        className={styles.image}
       />
       <Image
         src="/icons8-react.svg"
@@ -51,6 +54,7 @@ export default function Footer() {
         alt="Redux icon by Icons8"
         width="45"
         height="45"
+        className={styles.image}
       />
       <Image
         src="/next-js.svg"
@@ -63,6 +67,7 @@ export default function Footer() {
         alt="GraphQL icon by Icons8"
         width="45"
         height="45"
+        className={styles.image}
       />
       <Image
         src="/gatsby-js.svg"
@@ -75,6 +80,7 @@ export default function Footer() {
         alt="Jest icon by Iconsfinder"
         width="45"
         height="45"
+        className={styles.image}
       />
       <Image
         src="/cypress-js.svg"

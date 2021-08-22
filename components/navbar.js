@@ -16,9 +16,10 @@ export default function Navbar() {
         <Link href="/" passHref>
           <Image
             src="/mikeattah002.jpg"
-            width="52"
             height="52"
+            width="52"
             alt="Mike Attah"
+            className={styles.image}
           />
         </Link>
       </div>

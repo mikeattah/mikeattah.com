@@ -2,11 +2,15 @@ import Image from "next/image";
 import styles from "../styles/Projects.module.scss";
 import Layout from "../components/layout.js";
 import { projectRecords } from "../projectrecord.js";
+import { faAngleDoubleRight } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const projectOne = Math.floor(Math.random() * projectRecords.length);
 const projectTwo = Math.floor(Math.random() * projectRecords.length);
 const projectThree = Math.floor(Math.random() * projectRecords.length);
 const projectFour = Math.floor(Math.random() * projectRecords.length);
+const projectFive = Math.floor(Math.random() * projectRecords.length);
+const projectSix = Math.floor(Math.random() * projectRecords.length);
 
 // projectRecords[projectOne].href
 // projectRecords[projectOne].src
@@ -29,9 +33,7 @@ export default function Projects({ title, description, ...props }) {
               className={styles.projectimage}
             />
             <div className={styles.projectcaption}>
-              <span>
-                <i>&#8810;</i>Random Quote Machine<i>&#8811;</i>
-              </span>
+              <span>Random Quote Machine</span>
             </div>
           </a>
           <a className={styles.project}>
@@ -43,9 +45,7 @@ export default function Projects({ title, description, ...props }) {
               className={styles.projectimage}
             />
             <div className={styles.projectcaption}>
-              <span>
-                <i>&#8810;</i>Random Quote Machine<i>&#8811;</i>
-              </span>
+              <span>Random Quote Machine</span>
             </div>
           </a>
           <a className={styles.project}>
@@ -57,9 +57,7 @@ export default function Projects({ title, description, ...props }) {
               className={styles.projectimage}
             />
             <div className={styles.projectcaption}>
-              <span>
-                <i>&#8810;</i>Random Quote Machine<i>&#8811;</i>
-              </span>
+              <span>Random Quote Machine</span>
             </div>
           </a>
           <a className={styles.project}>
@@ -71,9 +69,7 @@ export default function Projects({ title, description, ...props }) {
               className={styles.projectimage}
             />
             <div className={styles.projectcaption}>
-              <span>
-                <i>&#8810;</i>Random Quote Machine<i>&#8811;</i>
-              </span>
+              <span>Random Quote Machine</span>
             </div>
           </a>
           <a className={styles.project}>
@@ -85,9 +81,7 @@ export default function Projects({ title, description, ...props }) {
               className={styles.projectimage}
             />
             <div className={styles.projectcaption}>
-              <span>
-                <i>&#8810;</i>Random Quote Machine<i>&#8811;</i>
-              </span>
+              <span>Random Quote Machine</span>
             </div>
           </a>
           <a className={styles.project}>
@@ -99,9 +93,7 @@ export default function Projects({ title, description, ...props }) {
               className={styles.projectimage}
             />
             <div className={styles.projectcaption}>
-              <span>
-                <i>&#8810;</i>Random Quote Machine<i>&#8811;</i>
-              </span>
+              <span>Random Quote Machine</span>
             </div>
           </a>
         </div>
@@ -112,7 +104,11 @@ export default function Projects({ title, description, ...props }) {
             target="_blank"
             rel="noreferrer"
           >
-            Show All
+            <span>Show All</span>
+            <FontAwesomeIcon
+              icon={faAngleDoubleRight}
+              className={styles.showallicon}
+            />
           </a>
         </div>
       </div>

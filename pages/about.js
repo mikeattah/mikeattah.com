@@ -15,11 +15,12 @@ export default function About({ title, description, ...props }) {
             <p>
               My journey into tech started at the beginning of 2021 and it has
               so far been a roller coaster experience - exciting and challenging
-              at the same time.
+              at the same time, but totally worth it.
             </p>
             <p>
-              I have completed several courses on freeCodeCamp, Codecademy, and
-              Sololearn related to HTML, CSS, JavaScript, React and more!
+              I have completed several courses on freeCodeCamp, Codecademy,
+              Sololearn and W3Schools related to HTML, CSS, JavaScript, React
+              and more!
             </p>
             <p>
               Please checkout my{" "}
@@ -29,15 +30,8 @@ export default function About({ title, description, ...props }) {
               >
                 Projects
               </a>{" "}
-              page to see what I have done so far. You can also find my
-              pro/social media links and resume on the{" "}
-              <a
-                href="https://mikeattah.vercel.app/contact"
-                className={styles.links}
-              >
-                Contact
-              </a>{" "}
-              page.
+              page to see what I have done so far. I am eager to get started on
+              interesting projects or products!
             </p>
           </div>
           <div className={styles.contentbottom}>
@@ -46,26 +40,26 @@ export default function About({ title, description, ...props }) {
               web apps with these tools:
             </p>
             <div className={styles.toolsone}>
-              <span>CSS</span>
-              <span>Sass</span>
-              <span>Bootstrap</span>
-              <span>JavaScript</span>
-              <span>JQuery</span>
-              <span>React</span>
-              <span>Redux</span>
-              <span>Next</span>
-              <span>GraphQL</span>
-              <span>Gatsby</span>
+              <span className={styles.tool}>CSS</span>
+              <span className={styles.tool}>Sass</span>
+              <span className={styles.tool}>Bootstrap</span>
+              <span className={styles.tool}>JavaScript</span>
+              <span className={styles.tool}>JQuery</span>
+              <span className={styles.tool}>React</span>
+              <span className={styles.tool}>Redux</span>
+              <span className={styles.tool}>Next</span>
+              <span className={styles.tool}>GraphQL</span>
+              <span className={styles.tool}>Gatsby</span>
             </div>
             <p>Run unit and integration tests with:</p>
             <div className={styles.toolstwo}>
-              <span>Jest</span>
-              <span>React-Testing-Library</span>
-              <span>Cypress</span>
+              <span className={styles.tool}>Jest</span>
+              <span className={styles.tool}>React-Testing-Library</span>
+              <span className={styles.tool}>Cypress</span>
             </div>
             <p>And handle version control with:</p>
             <div className={styles.toolsthree}>
-              <span>Git</span>
+              <span className={styles.tool}>Git</span>
             </div>
           </div>
         </div>

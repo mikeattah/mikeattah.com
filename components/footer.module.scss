@@ -6,3 +6,13 @@
   height: 7vh;
   width: 100%;
 }
+
+@media (max-width: 600px) {
+  .container {
+    padding: 0 2%;
+  }
+
+  .image {
+    visibility: hidden;
+  }
+}
