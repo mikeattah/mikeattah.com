@@ -8,6 +8,14 @@ export default function About({ title, description, ...props }) {
   return (
     <Layout pageTitle={`${title} | About`}>
       <div className={styles.container}>
+        <div className={styles.petdog}>
+          <Image
+            src="/stuck-at-home-pet-dog-1.png"
+            height="75"
+            width="75"
+            alt="stuck-at-home-pet-dog-1 from blush.design"
+          />
+        </div>
         <div className={styles.image}></div>
         <div className={styles.content}>
           <div className={styles.contenttop}>
@@ -70,6 +78,7 @@ export default function About({ title, description, ...props }) {
         >
           <FontAwesomeIcon icon={faDownload} className={styles.resumeicon} />
           <span className={styles.resumetext}>Resume</span>
+          <span className={styles.resumetextmobile}>Resume</span>
         </a>
       </div>
     </Layout>
