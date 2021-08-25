@@ -11,6 +11,18 @@
   width: 7%;
 }
 
+.imagepc {
+  display: block;
+}
+
+.imagetablet {
+  display: none;
+}
+
+.imagemobile {
+  display: none;
+}
+
 .navitems {
   display: flex;
   flex-direction: row;
@@ -94,20 +106,63 @@
 }
 
 @media (max-width: 600px) {
+  .container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+  }
+
   .imagecontainer {
-    width: 20%;
+    display: none;
+  }
+
+  .imagepc {
+    display: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .imagetablet {
+    display: none;
+    margin: 0;
+    padding: 0;
   }
 
   .navitems {
-    width: 80%;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
   }
 
-  .brand {
+  .link {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 25%;
+    color: white;
+    margin: 0;
+    padding: 0;
+
+    & span {
+      display: none;
+    }
+  }
+
+  .activeLink {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    color: #0070f3;
+    margin: 0;
+    padding: 0;
 
     & span {
       display: none;
@@ -115,9 +170,9 @@
   }
 
   .icons {
-    height: 90%;
-    width: 90%;
+    height: 55%;
+    width: 55%;
     margin: 0;
-    padding-top: 0.3em;
+    padding: 0;
   }
 }

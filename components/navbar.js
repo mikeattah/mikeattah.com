@@ -16,15 +16,26 @@ export default function Navbar() {
   return (
     <nav className={styles.container}>
       <div className={styles.imagecontainer}>
-        <Link href="/" passHref>
-          <Image
-            src="/mikeattah002.jpg"
-            height="52"
-            width="52"
-            alt="Mike Attah"
-            className={styles.image}
-          />
-        </Link>
+        <div className={styles.imagepc}>
+          <Link href="/" passHref>
+            <Image
+              src="/mikeattah002.jpg"
+              height="52"
+              width="52"
+              alt="Mike Attah"
+            />
+          </Link>
+        </div>
+        <div className={styles.imagetablet}>
+          <Link href="/" passHref>
+            <Image
+              src="/mikeattah002.jpg"
+              height="39"
+              width="39"
+              alt="Mike Attah"
+            />
+          </Link>
+        </div>
       </div>
       <div className={styles.navitems}>
         <Link href="/" passHref>
