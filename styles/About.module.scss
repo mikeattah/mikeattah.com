@@ -139,84 +139,93 @@
   padding: 0;
 }
 
-.resumetextmobile {
-  display: none;
-}
-
 @media (max-width: 1200px) {
-  .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 100%;
-    width: 100%;
+  .petdog {
+    display: none;
   }
 
   .image {
-    height: 45%;
-    width: 100%;
-    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 85%;
+    width: 30%;
+    border: 5px solid;
+    border-image: repeating-linear-gradient(45deg, #0070f3, pink 4%) 15;
     border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+
+    &:hover {
+      background-image: url("/the-little-things-working.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
   }
 
   .content {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    height: 45%;
-    width: 100%;
-    padding: 0;
-    font-family: "Roboto", "Montserrat", "Sans Serif";
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 85%;
+    width: 60%;
+    padding: 0 15px;
+    font-family: "Roboto", "Montserrat", sans-serif;
     font-size: 1.3rem;
-    border: 1px solid black;
-    border-radius: 20px;
     text-align: justify;
+    border: 5px solid;
+    border-image: repeating-linear-gradient(
+        45deg,
+        #0070f3,
+        hsl(350, 100%, 88%) 4%
+      )
+      15;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
 
     p {
       padding: 0;
-      margin: 15px 0;
-      word-wrap: break-word;
+      margin: 1% 0;
     }
-  }
-
-  .contenttop {
-    height: 50%;
-    width: 100%;
-    margin: 0;
-    padding: 10px 20px 0 20px;
-  }
-
-  .contentbottom {
-    height: 50%;
-    width: 100%;
-    margin: 0;
-    padding: 0 20px 0 20px;
   }
 
   .toolsone {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: flex-start;
     width: 100%;
   }
 
   .toolstwo {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
-    width: 42%;
+    width: 60%;
   }
 
   .toolsthree {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    width: 10%;
+    width: 20%;
+  }
+
+  .tool {
+    font-weight: bold;
+    padding: 0 10.5px 0 0;
+    color: #0070f3;
+
+    &:touch {
+      text-shadow: 2px 2px hsl(350, 100%, 88%);
+    }
   }
 
   .links {
+    font-weight: bold;
     color: #0070f3;
 
     &:hover {
@@ -226,8 +235,8 @@
 
   .resumebutton {
     position: absolute;
-    top: 77.7vh;
-    left: 85.5vw;
+    top: 77.5vh;
+    left: 80vw;
     height: 50px;
     width: 145px;
     display: flex;
@@ -241,125 +250,7 @@
     border: 2px solid #0070f3;
     border-radius: 15px;
     transition: all 0.4s;
-
-    &:hover {
-      cursor: pointer;
-      background-color: white;
-      color: #0070f3;
-    }
-  }
-
-  .resumeicon {
-    width: 45%;
-    height: 45%;
-    margin: 0;
-    padding: 0;
-  }
-
-  .resumetext {
-    margin: 0;
-    padding: 0;
-  }
-}
-
-@media (max-width: 900px) {
-  .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-  }
-
-  .image {
-    height: 45%;
-    width: 100%;
-    border: 1px solid black;
-    border-radius: 20px;
-  }
-
-  .content {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    height: 45%;
-    width: 100%;
-    padding: 0;
-    font-family: "Roboto", "Montserrat", "Sans Serif";
-    font-size: 1.3rem;
-    border: 1px solid black;
-    border-radius: 20px;
-    text-align: justify;
-
-    p {
-      padding: 0;
-      margin: 15px 0;
-      word-wrap: break-word;
-    }
-  }
-
-  .contenttop {
-    height: 50%;
-    width: 100%;
-    margin: 0;
-    padding: 10px 20px 0 20px;
-  }
-
-  .contentbottom {
-    height: 50%;
-    width: 100%;
-    margin: 0;
-    padding: 0 20px 0 20px;
-  }
-
-  .toolsone {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-  }
-
-  .toolstwo {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 42%;
-  }
-
-  .toolsthree {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    width: 10%;
-  }
-
-  .links {
-    color: #0070f3;
-
-    &:hover {
-      text-decoration: underline;
-    }
-  }
-
-  .resumebutton {
-    position: absolute;
-    top: 77.7vh;
-    left: 85.5vw;
-    height: 50px;
-    width: 145px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 0 13px 0 0;
-    margin: 0;
-    font-size: 1.5rem;
-    background-color: #0070f3;
-    border: 2px solid #0070f3;
-    border-radius: 15px;
-    transition: all 0.4s;
+    animation: pulse-blue 2s infinite;
 
     &:hover {
       cursor: pointer;
@@ -397,16 +288,10 @@
 
   .image {
     height: 30%;
-    width: 50%;
+    width: 55%;
     border-radius: 50%;
-    border: 4px solid;
-    border-image: repeating-linear-gradient(
-        45deg,
-        #0070f3,
-        hsl(350, 100%, 88%) 4%
-      )
-      15;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+    border: 2px solid;
+    // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
   }
 
   .content {
@@ -416,18 +301,12 @@
     align-items: flex-start;
     height: 60%;
     width: 90%;
-    padding: 0 8px;
+    padding: 4px 8px;
     font-family: "Roboto", "Montserrat", "sans-serif";
     font-size: 0.8rem;
     text-align: justify;
-    border: 4px solid;
-    border-image: repeating-linear-gradient(
-        45deg,
-        #0070f3,
-        hsl(350, 100%, 88%) 4%
-      )
-      15;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+    border: 2px solid;
+    // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
 
     p {
       margin: 0;

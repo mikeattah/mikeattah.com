@@ -16,7 +16,7 @@ export default function Navbar() {
   return (
     <nav className={styles.container}>
       <div className={styles.imagecontainer}>
-        <div className={styles.imagepc}>
+        <div className={styles.laptop}>
           <Link href="/" passHref>
             <Image
               src="/mikeattah002.jpg"
@@ -26,12 +26,12 @@ export default function Navbar() {
             />
           </Link>
         </div>
-        <div className={styles.imagetablet}>
+        <div className={styles.tablet}>
           <Link href="/" passHref>
             <Image
               src="/mikeattah002.jpg"
-              height="39"
-              width="39"
+              height="55"
+              width="55"
               alt="Mike Attah"
             />
           </Link>

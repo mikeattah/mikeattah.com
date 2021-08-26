@@ -25,21 +25,31 @@ export default function Projects({ title, description, ...props }) {
         </div>
         <div className={styles.projectgroup}>
           <a className={styles.project}>
-            <div className={[styles.projectimage, styles.hideBlock].join(" ")}>
+            <div className={[styles.projectimages, styles.laptop].join(" ")}>
               <Image
                 src="/projects/random-quote-machine.jpg"
                 width="461"
                 height="210"
                 alt="Random Quote Machine"
+                className={styles.image}
               />
             </div>
-            <div className={styles.projectimage}>
+            <div className={[styles.projectimages, styles.tablet].join(" ")}>
               <Image
                 src="/projects/random-quote-machine.jpg"
-                width="461"
-                height="525"
+                width="475"
+                height="350"
                 alt="Random Quote Machine"
-                className={styles.projectimage}
+                className={styles.image}
+              />
+            </div>
+            <div className={[styles.projectimages, styles.mobile].join(" ")}>
+              <Image
+                src="/projects/random-quote-machine.jpg"
+                width="475"
+                height="625"
+                alt="Random Quote Machine"
+                className={styles.image}
               />
             </div>
             <div className={styles.projectcaption}>
@@ -47,21 +57,31 @@ export default function Projects({ title, description, ...props }) {
             </div>
           </a>
           <a className={styles.project}>
-            <div className={[styles.projectimage, styles.hideBlock].join(" ")}>
+            <div className={[styles.projectimages, styles.laptop].join(" ")}>
               <Image
                 src="/projects/random-quote-machine.jpg"
                 width="461"
                 height="210"
                 alt="Random Quote Machine"
+                className={styles.image}
               />
             </div>
-            <div className={styles.projectimage}>
+            <div className={[styles.projectimages, styles.tablet].join(" ")}>
               <Image
                 src="/projects/random-quote-machine.jpg"
-                width="461"
-                height="525"
+                width="475"
+                height="350"
                 alt="Random Quote Machine"
-                className={styles.projectimage}
+                className={styles.image}
+              />
+            </div>
+            <div className={[styles.projectimages, styles.mobile].join(" ")}>
+              <Image
+                src="/projects/random-quote-machine.jpg"
+                width="475"
+                height="625"
+                alt="Random Quote Machine"
+                className={styles.image}
               />
             </div>
             <div className={styles.projectcaption}>
@@ -69,21 +89,31 @@ export default function Projects({ title, description, ...props }) {
             </div>
           </a>
           <a className={styles.project}>
-            <div className={[styles.projectimage, styles.hideBlock].join(" ")}>
+            <div className={[styles.projectimages, styles.laptop].join(" ")}>
               <Image
                 src="/projects/random-quote-machine.jpg"
                 width="461"
                 height="210"
                 alt="Random Quote Machine"
+                className={styles.image}
               />
             </div>
-            <div className={styles.projectimage}>
+            <div className={[styles.projectimages, styles.tablet].join(" ")}>
               <Image
                 src="/projects/random-quote-machine.jpg"
-                width="461"
-                height="525"
+                width="475"
+                height="350"
                 alt="Random Quote Machine"
-                className={styles.projectimage}
+                className={styles.image}
+              />
+            </div>
+            <div className={[styles.projectimages, styles.mobile].join(" ")}>
+              <Image
+                src="/projects/random-quote-machine.jpg"
+                width="475"
+                height="625"
+                alt="Random Quote Machine"
+                className={styles.image}
               />
             </div>
             <div className={styles.projectcaption}>
@@ -91,47 +121,83 @@ export default function Projects({ title, description, ...props }) {
             </div>
           </a>
           <a className={styles.project}>
-            <div className={[styles.projectimage, styles.hideBlock].join(" ")}>
+            <div className={[styles.projectimages, styles.laptop].join(" ")}>
               <Image
                 src="/projects/random-quote-machine.jpg"
                 width="461"
                 height="210"
                 alt="Random Quote Machine"
+                className={styles.image}
               />
             </div>
-            <div className={styles.projectimage}>
+            <div className={[styles.projectimages, styles.tablet].join(" ")}>
+              <Image
+                src="/projects/random-quote-machine.jpg"
+                width="475"
+                height="350"
+                alt="Random Quote Machine"
+                className={styles.image}
+              />
+            </div>
+            <div className={[styles.projectimages, styles.mobile].join(" ")}>
+              <Image
+                src="/projects/random-quote-machine.jpg"
+                width="475"
+                height="625"
+                alt="Random Quote Machine"
+                className={styles.image}
+              />
+            </div>
+            <div className={styles.projectcaption}>
+              <span>Random Quote Machine</span>
+            </div>
+          </a>
+          <a
+            className={[styles.project, styles.tablet, styles.laptop].join(" ")}
+          >
+            <div className={[styles.projectimages, styles.laptop].join(" ")}>
               <Image
                 src="/projects/random-quote-machine.jpg"
                 width="461"
-                height="525"
+                height="210"
                 alt="Random Quote Machine"
-                className={styles.projectimage}
+                className={styles.image}
+              />
+            </div>
+            <div className={[styles.projectimages, styles.tablet].join(" ")}>
+              <Image
+                src="/projects/random-quote-machine.jpg"
+                width="475"
+                height="350"
+                alt="Random Quote Machine"
+                className={styles.image}
               />
             </div>
             <div className={styles.projectcaption}>
               <span>Random Quote Machine</span>
             </div>
           </a>
-          <a className={[styles.project, styles.hideBlock].join(" ")}>
-            <Image
-              src="/projects/random-quote-machine.jpg"
-              width="461"
-              height="210"
-              alt="Random Quote Machine"
-              className={styles.projectimage}
-            />
-            <div className={styles.projectcaption}>
-              <span>Random Quote Machine</span>
+          <a
+            className={[styles.project, styles.tablet, styles.laptop].join(" ")}
+          >
+            <div className={[styles.projectimages, styles.laptop].join(" ")}>
+              <Image
+                src="/projects/random-quote-machine.jpg"
+                width="461"
+                height="210"
+                alt="Random Quote Machine"
+                className={styles.image}
+              />
             </div>
-          </a>
-          <a className={[styles.project, styles.hideBlock].join(" ")}>
-            <Image
-              src="/projects/random-quote-machine.jpg"
-              width="461"
-              height="210"
-              alt="Random Quote Machine"
-              className={styles.projectimage}
-            />
+            <div className={[styles.projectimages, styles.tablet].join(" ")}>
+              <Image
+                src="/projects/random-quote-machine.jpg"
+                width="475"
+                height="350"
+                alt="Random Quote Machine"
+                className={styles.image}
+              />
+            </div>
             <div className={styles.projectcaption}>
               <span>Random Quote Machine</span>
             </div>
