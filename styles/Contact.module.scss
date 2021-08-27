@@ -349,6 +349,9 @@
   }
 }
 
+@media (max-width: 900px) {
+}
+
 @media (max-width: 600px) {
   .container {
     height: 100%;
@@ -445,6 +448,7 @@
     color: #0070f3;
     text-decoration: none;
     padding-right: 8px;
+    border-style: none;
   }
 
   .linkedinprofile {
@@ -457,6 +461,7 @@
     color: #0070f3;
     text-decoration: none;
     padding-right: 8px;
+    border-style: none;
   }
 
   .twitterprofile {
@@ -469,6 +474,7 @@
     color: #0070f3;
     text-decoration: none;
     padding-right: 10px;
+    border-style: none;
   }
 
   .maillink {
@@ -481,6 +487,7 @@
     color: #0070f3;
     text-decoration: none;
     padding-right: 12px;
+    border-style: none;
   }
 
   .calllink {
@@ -493,6 +500,7 @@
     color: #0070f3;
     text-decoration: none;
     padding: 0 7px;
+    border-style: none;
   }
 
   .emoticon {

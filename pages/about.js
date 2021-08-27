@@ -70,7 +70,7 @@ export default function About({ title, description, ...props }) {
         </div>
         <a
           className={styles.resumebutton}
-          href="/mike_attah_resume_002.pdf"
+          href="/mike_attah_resume_003.pdf"
           download
         >
           <FontAwesomeIcon icon={faDownload} className={styles.resumeicon} />

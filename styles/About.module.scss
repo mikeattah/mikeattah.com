@@ -272,6 +272,9 @@
   }
 }
 
+@media (max-width: 900px) {
+}
+
 @media (max-width: 600px) {
   .container {
     display: flex;
@@ -342,7 +345,7 @@
   .tool {
     font-weight: bold;
     color: #0070f3;
-    margin-right: 5.2%;
+    margin-right: 5%;
   }
 
   .links {
