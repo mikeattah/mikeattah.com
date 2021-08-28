@@ -293,8 +293,9 @@
     height: 30%;
     width: 55%;
     border-radius: 50%;
-    border: 2px solid;
-    // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+    border: 2px solid #0070f3;
+    box-shadow: 0 4px 8px 0 rgba(0, 112, 243, 0.5),
+      0 6px 20px 0 rgba(0, 112, 243, 0.5);
   }
 
   .content {
@@ -308,12 +309,13 @@
     font-family: "Roboto", "Montserrat", "sans-serif";
     font-size: 0.8rem;
     text-align: justify;
-    border: 2px solid;
-    // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+    border: 2px solid #0070f3;
+    box-shadow: 0 4px 8px 0 rgba(0, 112, 243, 0.5),
+      0 6px 20px 0 rgba(0, 112, 243, 0.5);
 
     p {
       margin: 0;
-      padding: 5px 0;
+      padding: 4px 0;
       word-wrap: break-word;
     }
   }
@@ -345,7 +347,7 @@
   .tool {
     font-weight: bold;
     color: #0070f3;
-    margin-right: 5%;
+    margin-right: 2.5%;
   }
 
   .links {

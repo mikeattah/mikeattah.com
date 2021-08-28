@@ -16,26 +16,14 @@ export default function Navbar() {
   return (
     <nav className={styles.container}>
       <div className={styles.imagecontainer}>
-        <div className={styles.laptop}>
-          <Link href="/" passHref>
-            <Image
-              src="/mikeattah002.jpg"
-              height="52"
-              width="52"
-              alt="Mike Attah"
-            />
-          </Link>
-        </div>
-        <div className={styles.tablet}>
-          <Link href="/" passHref>
-            <Image
-              src="/mikeattah002.jpg"
-              height="55"
-              width="55"
-              alt="Mike Attah"
-            />
-          </Link>
-        </div>
+        <Link href="/" passHref>
+          <Image
+            src="/mikeattah002.jpg"
+            layout="fill"
+            objectFit="cover"
+            alt="Mike Attah"
+          />
+        </Link>
       </div>
       <div className={styles.navitems}>
         <Link href="/" passHref>
