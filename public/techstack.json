@@ -1,0 +1,20 @@
+{
+  "front": [
+    "GIT",
+    "HTML",
+    "CSS",
+    "SASS",
+    "BOOTSTRAP",
+    "JAVASCRIPT",
+    "JQUERY",
+    "REACT",
+    "REDUX",
+    "JEST",
+    "RTL",
+    "CYPRESS",
+    "NEXT",
+    "GRAPHQL",
+    "GATSBY"
+  ],
+  "back": []
+}
