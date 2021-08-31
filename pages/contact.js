@@ -18,14 +18,12 @@ export default function Contact({ title, description, ...props }) {
     <Layout pageTitle={`${title} | Contact`}>
       <div className={styles.container}>
         <div className={styles.workcontainer}>
-          <p className={styles.workone}>Let&apos;s work together...</p>
+          <p className={styles.workone}>Let&apos;s work together!</p>
           <div className={styles.worktwo}>
             <span className={styles.coffeetext}>
               How do you like your coffee?
             </span>
-            {/* <FontAwesomeIcon icon={faCoffee} className={styles.coffee} /> */}
           </div>
-          {/* <span className={styles.watertext}>Drink water!</span> */}
         </div>
         <div className={styles.profilecontainer}>
           <a

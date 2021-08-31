@@ -273,6 +273,120 @@
 }
 
 @media (max-width: 900px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+
+  .petdog {
+    display: none;
+  }
+
+  .image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    width: 25%;
+    border: 5px solid #0070f3;
+    border-image: repeating-linear-gradient(45deg, #0070f3, pink 4%) 15;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 90%;
+    width: 60%;
+    padding: 0 10px;
+    font-family: "Roboto", "Montserrat", sans-serif;
+    font-size: 0.75rem;
+    text-align: justify;
+    border: 5px solid #0070f3;
+    border-image: repeating-linear-gradient(
+        45deg,
+        #0070f3,
+        hsl(350, 100%, 88%) 4%
+      )
+      15;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+
+    p {
+      padding: 0;
+      margin: 0.35% 0;
+    }
+  }
+
+  .toolsone {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  .toolstwo {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 60%;
+  }
+
+  .toolsthree {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 20%;
+  }
+
+  .tool {
+    font-weight: bold;
+    color: #0070f3;
+  }
+
+  .links {
+    font-weight: bold;
+    color: #0070f3;
+  }
+
+  .resumebutton {
+    position: absolute;
+    top: 72vh;
+    left: 87vw;
+    height: 45px;
+    width: 45px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    font-size: 1.5rem;
+    background-color: #0070f3;
+    border: 2px solid #0070f3;
+    border-radius: 50%;
+    transition: all 0.4s;
+    animation: pulse-blue 2s infinite;
+  }
+
+  .resumeicon {
+    width: 45%;
+    height: 45%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .resumetext {
+    display: none;
+  }
 }
 
 @media (max-width: 600px) {
@@ -352,10 +466,6 @@
 
   .links {
     color: #0070f3;
-
-    &:hover {
-      text-decoration: underline;
-    }
   }
 
   .resumebutton {
@@ -376,12 +486,6 @@
     border-radius: 50%;
     transition: all 0.4s;
     animation: pulse-blue 2s infinite;
-
-    &:hover {
-      cursor: pointer;
-      background-color: white;
-      color: #0070f3;
-    }
   }
 
   .resumeicon {
