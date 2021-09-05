@@ -43,6 +43,33 @@
   color: gray;
 }
 
+.codewars {
+  position: absolute;
+  top: 7vh;
+  left: 92vw;
+  width: 8vw;
+  height: 8vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.codewarslogo {
+  position: relative;
+  width: 20%;
+  height: 100%;
+}
+
+.codewarstext {
+  width: 50%;
+  height: 50%;
+  font-size: 1rem;
+  color: gray;
+  text-align: left;
+  font-family: "Sacramento", cursive, "Roboto", "Montserrat", "Sans-serif";
+}
+
 @media (max-width: 1200px) {
   .main {
     padding: 5rem 0;

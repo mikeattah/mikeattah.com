@@ -17,12 +17,15 @@ export default function Navbar() {
     <nav className={styles.container}>
       <div className={styles.imagecontainer}>
         <Link href="/" passHref>
-          <Image
-            src="/mikeattah002.jpg"
-            layout="fill"
-            objectFit="cover"
-            alt="Mike Attah"
-          />
+          {/* anchor tag added to received 'passHref' */}
+          <a>
+            <Image
+              src="/mikeattah002.jpg"
+              layout="fill"
+              objectFit="cover"
+              alt="Mike Attah"
+            />
+          </a>
         </Link>
       </div>
       <div className={styles.navitems}>

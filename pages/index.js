@@ -14,18 +14,43 @@ export default function Home({ title, description, ...props }) {
           {/* I build web applications using React, Next.js, and Gatsby. */}
           {/* I build web, mobile and desktop apps. */}
         </main>
+        <div className={styles.codewars}>
+          <div className={styles.codewarslogo}>
+            <Image
+              src="/codewars-icon.svg"
+              alt="Codewars icon"
+              layout="fill"
+              objectFit="contain"
+              title="Codewars Honor"
+            />
+          </div>
+          <span className={styles.codewarstext} title="Codewars Honor">
+            {props.honor}
+          </span>
+        </div>
       </div>
     </Layout>
   );
 }
 
 export async function getStaticProps() {
-  const configData = await import(`../siteconfig.json`);
+  const [configRes, codewarsRes] = await Promise.all([
+    import(`../siteconfig.json`),
+    fetch("https://www.codewars.com/api/v1/users/mikeattah"),
+  ]);
+
+  const [configData, codewarsData] = await Promise.all([
+    configRes.default,
+    codewarsRes.json(),
+  ]);
+
+  // console.log(codewarsData);
 
   return {
     props: {
-      title: configData.default.title,
-      description: configData.default.description,
+      title: configData.title,
+      description: configData.description,
+      honor: codewarsData.honor,
     },
   };
 }
