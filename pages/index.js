@@ -1,8 +1,9 @@
-import Image from "next/image";
+// import Image from "next/image";
 import styles from "../styles/Home.module.scss";
 import Layout from "../components/layout.js";
 
 export default function Home({ title, description, ...props }) {
+  // const honor = `https://img.shields.io/badge/Codewars-${props.honor}-blue?logo=codewars`;
   return (
     <Layout pageTitle={title} pageDescription={description}>
       <div className={styles.container}>
@@ -14,26 +15,27 @@ export default function Home({ title, description, ...props }) {
           {/* I build web applications using React, Next.js, and Gatsby. */}
           {/* I build web, mobile and desktop apps. */}
         </main>
-        <div className={styles.codewars}>
-          <div className={styles.codewarslogo}>
+        {/* <div className={styles.codewars}>
+          <a
+            href="https://www.codewars.com/users/mikeattah"
+            className={styles.codewarslogo}
+          >
             <Image
-              src="/codewars-icon.svg"
-              alt="Codewars icon"
+              src={honor}
+              alt="Codewars Honor"
+              className={styles.codewarstext}
+              title="Codewars Honor"
               layout="fill"
               objectFit="contain"
-              title="Codewars Honor"
             />
-          </div>
-          <span className={styles.codewarstext} title="Codewars Honor">
-            {props.honor}
-          </span>
-        </div>
+          </a>
+        </div> */}
       </div>
     </Layout>
   );
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps(context) {
   const [configRes, codewarsRes] = await Promise.all([
     import(`../siteconfig.json`),
     fetch("https://www.codewars.com/api/v1/users/mikeattah"),

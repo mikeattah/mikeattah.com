@@ -5,19 +5,27 @@
   flex-direction: column;
 }
 
+.backgroundImage {
+  z-index: 0;
+  opacity: 0.5;
+}
+
 .navbar {
   height: 7%;
   width: 100%;
+  z-index: 5;
 }
 
 .main {
   height: 86%;
   width: 100%;
+  z-index: 5;
 }
 
 .footer {
   height: 7%;
   width: 100%;
+  z-index: 5;
 }
 
 @media (max-width: 1200px) {
@@ -28,19 +36,26 @@
     flex-direction: column;
   }
 
+  .backgroundImage {
+    z-index: 0;
+  }
+
   .navbar {
     height: 7%;
     width: 100%;
+    z-index: 5;
   }
 
   .main {
     height: 86%;
     width: 100%;
+    z-index: 5;
   }
 
   .footer {
     height: 7%;
     width: 100%;
+    z-index: 5;
   }
 }
 
@@ -52,19 +67,26 @@
     flex-direction: column-reverse;
   }
 
+  .backgroundImage {
+    z-index: 0;
+  }
+
   .navbar {
     height: 7%;
     width: 100%;
+    z-index: 5;
   }
 
   .main {
     height: 86%;
     width: 100%;
+    z-index: 5;
   }
 
   .footer {
     height: 7%;
     width: 100%;
+    z-index: 5;
   }
 }
 
@@ -76,18 +98,25 @@
     flex-direction: column-reverse;
   }
 
+  .backgroundImage {
+    z-index: 0;
+  }
+
   .navbar {
     height: 7%;
     width: 100%;
+    z-index: 5;
   }
 
   .main {
     height: 86%;
     width: 100%;
+    z-index: 5;
   }
 
   .footer {
     height: 7%;
     width: 100%;
+    z-index: 5;
   }
 }
