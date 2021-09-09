@@ -40,6 +40,7 @@ export default function Layout({
         layout="fill"
         objectFit="cover"
         objectPosition="center"
+        backgroundRepeat="repeat"
         className={styles.backgroundImage}
       />
       <div className={styles.navbar}>
