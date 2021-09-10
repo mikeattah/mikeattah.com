@@ -16,7 +16,16 @@ export default function About({ title, description, ...props }) {
             alt="stuck-at-home-pet-dog-1 from blush.design"
           />
         </div>
-        <div className={styles.image}></div>
+        <div className={styles.imagecontainer}>
+          <Image
+            src="/mikeattah-about-001.jpg"
+            layout="fill"
+            objectFit="cover"
+            objectPosition="top center"
+            alt="Mike Attah"
+            className={styles.image}
+          />
+        </div>
         <div className={styles.content}>
           <p>I am a civil engineer turned frontend developer!</p>
           <p>

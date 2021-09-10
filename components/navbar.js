@@ -20,7 +20,7 @@ export default function Navbar() {
           {/* anchor tag added to received 'passHref' */}
           <a>
             <Image
-              src="/mikeattah002.jpg"
+              src="/mikeattah-navbar-001.jpg"
               layout="fill"
               objectFit="cover"
               alt="Mike Attah"

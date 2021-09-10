@@ -9,6 +9,10 @@ const backgroundImage = [
   "/pexels-monstera-7794483.jpg",
   "/jj-ying-7JX0-bfiuxQ-unsplash.jpg",
   "/pexels-nathalie-de-boever-1398049.jpg",
+  "/pexels-emiliano-arano-1312488.jpg",
+  "/pexels-pixabay-531767.jpg",
+  "/samsommer-vddccTqwal8-unsplash.jpg",
+  "/thijs-kennis-hxQWcORMHBE-unsplash.jpg",
 ];
 
 var randomImage = Math.floor(Math.random() * backgroundImage.length);
@@ -40,7 +44,7 @@ export default function Layout({
         layout="fill"
         objectFit="cover"
         objectPosition="center"
-        backgroundRepeat="repeat"
+        // backgroundRepeat="repeat"
         className={styles.backgroundImage}
       />
       <div className={styles.navbar}>

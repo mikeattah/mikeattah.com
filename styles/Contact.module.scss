@@ -42,7 +42,8 @@
   font-style: italic;
   margin: 0;
   padding: 0;
-  color: #da70d6;
+  color: #0070f3;
+  font-weight: bolder;
 }
 
 .coffee {
@@ -99,7 +100,6 @@
   border: 2px solid black;
   border-radius: 15px;
   transition: all 0.3s ease-in-out;
-
   &:hover {
     border: 2px solid #0070f3;
     border-radius: 15px;
@@ -121,7 +121,6 @@
   border: 2px solid black;
   border-radius: 15px;
   transition: all 0.3s ease-in-out;
-
   &:hover {
     border: 2px solid #0070f3;
     border-radius: 15px;
@@ -144,7 +143,6 @@
   border: 2px solid black;
   border-radius: 15px;
   transition: all 0.3s ease-in-out;
-
   &:hover {
     border: 2px solid #0070f3;
     border-radius: 15px;
@@ -167,7 +165,6 @@
   border: 2px solid black;
   border-radius: 15px;
   transition: all 0.3s ease-in-out;
-
   &:hover {
     border: 2px solid #0070f3;
     border-radius: 15px;
@@ -190,7 +187,6 @@
   border: 2px solid black;
   border-radius: 15px;
   transition: all 0.3s ease-in-out;
-
   &:hover {
     border: 2px solid #0070f3;
     border-radius: 15px;
@@ -219,7 +215,6 @@
     text-align: center;
     color: gray;
   }
-
   &:hover {
     .attribute {
       display: flex;
@@ -271,7 +266,8 @@
     font-style: italic;
     margin: 0;
     padding: 0;
-    color: #da70d6;
+    color: #0070f3;
+    font-weight: bolder;
   }
 
   .profilecontainer {
@@ -442,7 +438,8 @@
     font-style: italic;
     margin: 0;
     padding: 0;
-    color: #da70d6;
+    color: #0070f3;
+    font-weight: bolder;
   }
 
   .profilecontainer {
@@ -611,8 +608,9 @@
     font-style: italic;
     margin: 0;
     padding: 0;
-    color: #da70d6;
+    color: #0070f3;
     text-align: center;
+    font-weight: bolder;
   }
 
   .coffee {
@@ -631,20 +629,22 @@
 
   .profilecontainer {
     height: 50%;
-    width: 97%;
+    width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    align-items: flex-end;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     margin: 0;
-    padding: 25px 0;
+    padding: 50px 0;
   }
 
   .profileicon {
-    height: 100%;
-    width: 100%;
+    height: 60px;
+    width: 60px;
     margin: 0;
     padding: 0;
+    align-self: center;
   }
 
   .profiletext {
@@ -659,11 +659,12 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 13%;
-    width: 13%;
+    height: 18%;
+    width: 18%;
     color: #0070f3;
     text-decoration: none;
-    padding-right: 8px;
+    margin: 0 30px;
+    padding: 0;
     border-style: none;
   }
 
@@ -672,12 +673,14 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 13%;
-    width: 13%;
+    height: 18%;
+    width: 18%;
     color: #0070f3;
+    padding: 0;
+    margin: 0 30px;
     text-decoration: none;
-    padding-right: 8px;
     border-style: none;
+    align-self: center;
   }
 
   .twitterprofile {
@@ -685,11 +688,12 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 13%;
-    width: 13%;
+    height: 18%;
+    width: 18%;
     color: #0070f3;
+    padding: 0;
+    margin: 0 30px;
     text-decoration: none;
-    padding-right: 10px;
     border-style: none;
   }
 
@@ -698,11 +702,12 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 13%;
-    width: 13%;
+    height: 18%;
+    width: 18%;
     color: #0070f3;
+    padding: 0;
+    margin: 0 30px;
     text-decoration: none;
-    padding-right: 12px;
     border-style: none;
   }
 
@@ -711,9 +716,11 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 13%;
-    width: 13%;
+    height: 18%;
+    width: 18%;
     color: #0070f3;
+    padding: 0;
+    margin: 0 30px;
     text-decoration: none;
     padding: 0 7px;
     border-style: none;
