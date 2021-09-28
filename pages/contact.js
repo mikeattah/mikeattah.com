@@ -52,7 +52,7 @@ export default function Contact({ title, description, ...props }) {
           </a>
           <a
             className={styles.twitterprofile}
-            href="https://twitter.com/mikeattah_"
+            href="https://twitter.com/miikeattah"
             target="_blank"
             rel="noreferrer"
           >

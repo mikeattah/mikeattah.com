@@ -19,6 +19,7 @@ const securityHeaders = [
 ];
 
 module.exports = {
+  compress: true,
   reactStrictMode: true,
   sassOptions: {
     includePaths: [path.join(__dirname, "styles")],

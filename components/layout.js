@@ -32,7 +32,7 @@ export default function Layout({
         <meta
           name="og:description"
           content={pageDescription}
-          contentType="application/javascript"
+          contenttype="application/javascript"
         />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://mikeattah.com" />
