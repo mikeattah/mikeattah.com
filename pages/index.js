@@ -1,16 +1,13 @@
 import Image from "next/image";
 
-import Layout from "../components/Layout.js";
-import StackAnimation from "../components/StackAnimation/StackAnimation.js";
+import Layout from "../components/Layout";
+import StackAnimation from "../components/StackAnimation/StackAnimation";
 
-import { stackList } from "../stackList.js";
+import { stackList } from "../stackList";
 
 export default function Home({ title, description, ...props }) {
   return (
-    <Layout
-      pageDescription={description}
-      pageTitle={title}
-    >
+    <Layout pageDescription={description} pageTitle={title}>
       <div className="w-full h-full">
         <div className="w-full h-2/3 flex flex-col justify-center items-center relative">
           <Image
@@ -69,7 +66,7 @@ export async function getStaticProps() {
   return {
     props: {
       title: configData.default.title,
-      description: configData.default.description
-    }
+      description: configData.default.description,
+    },
   };
 }

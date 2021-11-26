@@ -1,11 +1,11 @@
 import Image from "next/image";
 // https://mikeattah.com/public
 
-import Layout from "../components/Layout.js";
-import CodeEditorIcon from "../components/CodeEditorIcon.js";
-import ProjectCard from "../components/ProjectCard.js";
+import Layout from "../components/Layout";
+import CodeEditorIcon from "../components/CodeEditorIcon";
+import ProjectCard from "../components/ProjectCard";
 
-import { portfolio } from "../portfolio.js";
+import { portfolio } from "../portfolio";
 
 import { nanoid } from "nanoid";
 

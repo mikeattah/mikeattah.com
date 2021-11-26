@@ -1,7 +1,7 @@
 import Head from "next/head";
 // Import Image from "next/image";
 
-import NavBar from "./NavBar.js";
+import NavBar from "./NavBar";
 
 export default function Layout({
   children,
@@ -14,26 +14,11 @@ export default function Layout({
       <Head>
         <title property="og:title">{pageTitle}</title>
         <meta charSet="utf-8" />
-        <meta
-          content="width=device-width,initial-scale=1"
-          name="viewport"
-        />
-        <meta
-          content={pageDescription}
-          property="og:description"
-        />
-        <meta
-          content="website"
-          property="og:type"
-        />
-        <meta
-          content="https://mikeattah.com"
-          property="og:url"
-        />
-        <link
-          href="/favicon.ico"
-          rel="icon"
-        />
+        <meta content="width=device-width,initial-scale=1" name="viewport" />
+        <meta content={pageDescription} property="og:description" />
+        <meta content="website" property="og:type" />
+        <meta content="https://mikeattah.com" property="og:url" />
+        <link href="/favicon.ico" rel="icon" />
       </Head>
       <div className="max-w-screen h-screen flex flex-col m-0 p-0">
         <nav className="w-full min-h-16 flex items-center">

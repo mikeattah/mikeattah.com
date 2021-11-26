@@ -1,13 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import Layout from "../components/Layout.js";
-import StackCard from "../components/StackCard.js";
-import HobbyCard from "../components/HobbyCard.js";
-import ResumeCard from "../components/ResumeCard.js";
+import Layout from "../components/Layout";
+import StackCard from "../components/StackCard";
+import HobbyCard from "../components/HobbyCard";
+import ResumeCard from "../components/ResumeCard";
 
-import { stackLogos } from "../stackLogos.js";
-import { hobbies } from "../hobbies.js";
+import { stackLogos } from "../stackLogos";
+import { hobbies } from "../hobbies";
 
 import { nanoid } from "nanoid";
 
@@ -58,10 +58,7 @@ export default function About({ title, description, ...props }) {
               </p>
               <p className="mb-0.5 sm:mb-1.5 lg:mb-0.5">
                 Please checkout my &#128679;{" "}
-                <Link
-                  href="/projects"
-                  passHref
-                >
+                <Link href="/projects" passHref>
                   <a className="text-blue-600 font-bold hover:underline">
                     Projects
                   </a>
@@ -83,9 +80,7 @@ export default function About({ title, description, ...props }) {
               {stackLogos.map((stack, index) => {
                 const { tool, src } = stack;
 
-                return (<StackCard key={nanoid()}
-src={src}
-tool={tool} />)
+                return <StackCard key={nanoid()} src={src} tool={tool} />;
               })}
             </div>
             {/* Resume */}
@@ -109,9 +104,7 @@ tool={tool} />)
             {hobbies.map((hobby, index) => {
               const { src, alt } = hobby;
 
-              return (<HobbyCard key={nanoid()}
-src={src}
-alt={alt} />)
+              return <HobbyCard key={nanoid()} src={src} alt={alt} />;
             })}
           </div>
         </div>
@@ -126,7 +119,7 @@ export async function getStaticProps() {
   return {
     props: {
       title: configData.default.title,
-      description: configData.default.description
-    }
+      description: configData.default.description,
+    },
   };
 }

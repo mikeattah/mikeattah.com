@@ -1,4 +1,4 @@
-import NavIcon from "./NavIcon.js";
+import NavIcon from "./NavIcon";
 
 export default function NavBar() {
   return (

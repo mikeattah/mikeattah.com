@@ -1,11 +1,10 @@
 // Import { useEffect } from "react";
 import Image from "next/image";
 
-import Layout from "../components/Layout.js";
-import ContactIcon from "../components/ContactIcon.js";
+import Layout from "../components/Layout";
+import ContactIcon from "../components/ContactIcon";
 
 export default function Contact({ title, description, ...props }) {
-
   /*
    * UseEffect(() => {
    *   const text = document.querySelector(".text-string");
@@ -99,7 +98,7 @@ export async function getStaticProps() {
   return {
     props: {
       title: configData.default.title,
-      description: configData.default.description
-    }
+      description: configData.default.description,
+    },
   };
 }
