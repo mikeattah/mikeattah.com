@@ -27,7 +27,7 @@ export default function StackAnimation({ ...props }) {
       }
     }, 2000);
     return clearInterval;
-  }, []);
+  }, [props.stackList]);
 
   return (
     <div
