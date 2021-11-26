@@ -8,12 +8,12 @@ export default function ProjectCard({ ...props }) {
     >
       <div className="relative w-full h-60">
         <Image
-          src={props.src}
+          alt={props.alt}
+          className="rounded-tr-2xl rounded-tl-2xl"
           layout="fill"
           objectFit="cover"
           objectPosition="50% 50%"
-          alt={props.alt}
-          className="rounded-tr-2xl rounded-tl-2xl"
+          src={props.src}
         />
       </div>
       <div className="w-full max-h-112 flex flex-col justify-start items-center bg-white rounded-b-2xl m-0 pt-2 px-1.5">
@@ -30,14 +30,14 @@ export default function ProjectCard({ ...props }) {
         </div>
         <div className="w-full h-16 flex flex-row justify-evenly items-center m-0 p-0">
           <a
-            href={props.repo}
             className="text-blue-600 hover:text-white hover:bg-blue-600 font-bold border-blue-600 border-2 rounded-xl py-1 px-4 font-ter"
+            href={props.repo}
           >
             View Repo
           </a>
           <a
-            href={props.site}
             className="text-blue-600 hover:text-white hover:bg-blue-600 font-bold border-blue-600 border-2 rounded-xl py-1 px-4 font-ter"
+            href={props.site}
           >
             Live Site
           </a>

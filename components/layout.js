@@ -1,5 +1,5 @@
 import Head from "next/head";
-// import Image from "next/image";
+// Import Image from "next/image";
 
 import NavBar from "./NavBar.js";
 
@@ -14,11 +14,26 @@ export default function Layout({
       <Head>
         <title property="og:title">{pageTitle}</title>
         <meta charSet="utf-8" />
-        <meta name="viewport" content="width=device-width,initial-scale=1" />
-        <meta property="og:description" content={pageDescription} />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://mikeattah.com" />
-        <link rel="icon" href="/favicon.ico" />
+        <meta
+          content="width=device-width,initial-scale=1"
+          name="viewport"
+        />
+        <meta
+          content={pageDescription}
+          property="og:description"
+        />
+        <meta
+          content="website"
+          property="og:type"
+        />
+        <meta
+          content="https://mikeattah.com"
+          property="og:url"
+        />
+        <link
+          href="/favicon.ico"
+          rel="icon"
+        />
       </Head>
       <div className="max-w-screen h-screen flex flex-col m-0 p-0">
         <nav className="w-full min-h-16 flex items-center">

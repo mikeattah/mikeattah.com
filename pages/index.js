@@ -7,16 +7,19 @@ import { stackList } from "../stackList.js";
 
 export default function Home({ title, description, ...props }) {
   return (
-    <Layout pageTitle={title} pageDescription={description}>
+    <Layout
+      pageDescription={description}
+      pageTitle={title}
+    >
       <div className="w-full h-full">
         <div className="w-full h-2/3 flex flex-col justify-center items-center relative">
           <Image
-            src="/fakurian-design-GJKx5lhwU3M-unsplash.jpg"
+            alt="Paaattern's Inn"
+            className="-z-10"
             layout="fill"
             objectFit="cover"
             objectPosition="top left"
-            alt="Paaattern's Inn"
-            className="-z-10"
+            src="/fakurian-design-GJKx5lhwU3M-unsplash.jpg"
           />
           <h1 className="text-center text-black text-6xl sm:text-9xl font-bold leading-tight font-pri mb-3">
             Hi I&apos;m{" "}
@@ -36,22 +39,22 @@ export default function Home({ title, description, ...props }) {
         <div className="w-full h-1/3 flex flex-row">
           <div className="w-full lg:w-1/2 h-full relative">
             <Image
-              src="/paaatterns-022-p-1080.png"
+              alt="Source Paaattern's Inn"
+              className=""
               layout="fill"
               objectFit="cover"
               objectPosition="top"
-              alt="Source Paaattern's Inn"
-              className=""
+              src="/paaatterns-022-p-1080.png"
             />
           </div>
           <div className="hidden lg:flex w-1/2 h-full relative">
             <Image
-              src="/paaatterns-024-p-1080.png"
+              alt="Paaattern's Inn"
+              className=""
               layout="fill"
               objectFit="cover"
               objectPosition="top"
-              alt="Paaattern's Inn"
-              className=""
+              src="/paaatterns-024-p-1080.png"
             />
           </div>
         </div>
@@ -61,12 +64,12 @@ export default function Home({ title, description, ...props }) {
 }
 
 export async function getStaticProps() {
-  const configData = await import(`../siteConfig.json`);
+  const configData = await import("../siteConfig.json");
 
   return {
     props: {
       title: configData.default.title,
-      description: configData.default.description,
-    },
+      description: configData.default.description
+    }
   };
 }

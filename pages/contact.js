@@ -1,43 +1,48 @@
-// import { useEffect } from "react";
+// Import { useEffect } from "react";
 import Image from "next/image";
 
 import Layout from "../components/Layout.js";
 import ContactIcon from "../components/ContactIcon.js";
 
 export default function Contact({ title, description, ...props }) {
-  // useEffect(() => {
-  //   const text = document.querySelector(".text-string");
-  //   const drinkCoffee = "How do you like your coffee?";
-  //   const drinkWater = "However, hope you drank water today?";
 
-  //   setInterval(() => {
-  //     text.innerHTML =
-  //       text.textContent === drinkCoffee ? drinkWater : drinkCoffee;
-  //   }, 5000);
-  //   return clearInterval;
-  // }, []);
+  /*
+   * UseEffect(() => {
+   *   const text = document.querySelector(".text-string");
+   *   const drinkCoffee = "How do you like your coffee?";
+   *   const drinkWater = "However, hope you drank water today?";
+   */
+
+  /*
+   *   SetInterval(() => {
+   *     text.innerHTML =
+   *       text.textContent === drinkCoffee ? drinkWater : drinkCoffee;
+   *   }, 5000);
+   *   return clearInterval;
+   * }, []);
+   */
 
   return (
     <Layout pageTitle={`${title} | Contact`}>
       <div className="w-full h-full flex flex-col-reverse lg:flex-row-reverse">
         <div className="w-full lg:w-12/25 h-1/3 lg:h-full relative -z-10">
           <Image
-            src="/paaatterns-024-p-1080.png"
+            alt="Paaattern's Inn"
+            className=""
             layout="fill"
             objectFit="cover"
             objectPosition="top left"
-            alt="Paaattern's Inn"
-            className=""
+            src="/paaatterns-024-p-1080.png"
           />
         </div>
         <div className="w-full lg:w-13/25 h-2/3 lg:h-full flex flex-col justify-center items-center lg:items-start relative">
           <Image
-            src="/fakurian-design-GJKx5lhwU3M-unsplash.jpg"
+            alt="Paaattern's Inn"
+            className="-z-10"
             layout="fill"
             objectFit="cover"
             objectPosition="top left"
-            alt="Paaattern's Inn"
-            className="-z-10"
+            src="/fakurian-design-GJKx5lhwU3M-unsplash.jpg"
           />
           <div className="p-1.5 flex flex-col items-center lg:items-start">
             <h1 className="text-black text-5xl sm:text-8xl lg:text-6.5xl xl:text-7.5xl font-bold my-6 mx-0 p-0 font-pri">
@@ -52,34 +57,34 @@ export default function Contact({ title, description, ...props }) {
           </div>
           <div className="p-2.5 w-full md:w-9/12 lg:w-3/4 xl:w-1/2 h-2/12 flex flex-row justify-around lg:justify-between items-center lg:items-start">
             <ContactIcon
+              alt="GitHub"
               href="https://github.com/mikeattah"
               src="/logo-github.svg"
-              alt="GitHub"
             />
             <ContactIcon
+              alt="LinkedIn"
               href="https://www.linkedin.com/in/mikeattah/"
               src="/logo-linkedin.svg"
-              alt="LinkedIn"
             />
             <ContactIcon
+              alt="Twitter"
               href="https://twitter.com/miikeattah"
               src="/logo-twitter.svg"
-              alt="Twitter"
             />
             <ContactIcon
+              alt="Email"
               href="mailto:mailenemona@gmail.com"
               src="/mail.svg"
-              alt="Email"
             />
             <ContactIcon
+              alt="Skype Call"
               href="skype:attahmona?call"
               src="/logo-skype.svg"
-              alt="Skype Call"
             />
             <ContactIcon
+              alt="Mobile"
               href="tel:+2347013194373"
               src="/phone-portrait.svg"
-              alt="Mobile"
             />
           </div>
         </div>
@@ -89,12 +94,12 @@ export default function Contact({ title, description, ...props }) {
 }
 
 export async function getStaticProps() {
-  const configData = await import(`../siteConfig.json`);
+  const configData = await import("../siteConfig.json");
 
   return {
     props: {
       title: configData.default.title,
-      description: configData.default.description,
-    },
+      description: configData.default.description
+    }
   };
 }

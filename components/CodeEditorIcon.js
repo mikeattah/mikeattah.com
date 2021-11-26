@@ -5,17 +5,17 @@ export default function CodeEditorIcon({ ...props }) {
     <a
       className="relative w-10 h-10 mx-3 rounded-full ring-4 ring-white shadow-lg"
       href={props.hrefName}
-      target="_blank"
       rel="noreferrer"
+      target="_blank"
     >
       <Image
-        src={props.srcName}
+        alt={props.altName}
+        className="rounded-full"
         layout="fill"
         objectFit="cover"
         objectPosition="50% 50%"
-        alt={props.altName}
+        src={props.srcName}
         title={props.altName}
-        className="rounded-full"
       />
     </a>
   );

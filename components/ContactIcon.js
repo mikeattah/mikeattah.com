@@ -5,16 +5,16 @@ export default function ContactIcon({ ...props }) {
     <a
       className="transform  sm:scale-135 lg:scale-100"
       href={props.href}
-      target="_blank"
       rel="noreferrer"
+      target="_blank"
     >
       <Image
-        src={props.src}
-        width="30"
-        height="30"
-        objectPosition="center"
         alt={props.alt}
         className="hover:opacity-50"
+        height="30"
+        objectPosition="center"
+        src={props.src}
+        width="30"
       />
     </a>
   );

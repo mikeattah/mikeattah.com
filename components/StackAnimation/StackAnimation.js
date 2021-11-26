@@ -2,9 +2,9 @@ import { useEffect, useState } from "react";
 
 import { animate, stack } from "./StackAnimation.module.scss";
 
-// import { stackList } from "./StackList.js";
+// Import { stackList } from "./StackList.js";
 
-// import { nanoid } from "nanoid";
+// Import { nanoid } from "nanoid";
 
 export default function StackAnimation({ ...props }) {
   useEffect(() => {
@@ -18,7 +18,10 @@ export default function StackAnimation({ ...props }) {
 
       props.stackList[i].split("").forEach((letter) => {
         const letterElement = document.createElement("span");
-        letterElement.innerHTML = letter === " " ? "&nbsp;" : letter;
+
+        letterElement.innerHTML = letter === " "
+          ? "&nbsp;"
+          : letter;
         stack.appendChild(letterElement);
       });
       i++;
@@ -26,6 +29,7 @@ export default function StackAnimation({ ...props }) {
         i = 0;
       }
     }, 2000);
+
     return clearInterval;
   }, [props.stackList]);
 

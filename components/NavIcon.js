@@ -6,7 +6,10 @@ export default function Navicon({ ...props }) {
   const router = useRouter();
 
   return (
-    <Link href={props.pathName} passHref>
+    <Link
+      href={props.pathName}
+      passHref
+    >
       <a
         className={
           router.pathname === props.pathName
@@ -15,16 +18,16 @@ export default function Navicon({ ...props }) {
         }
       >
         <Image
+          alt="Nav Icon"
+          className="scale-75 lg:scale-100"
+          height="30"
+          objectPosition="center"
           src={
             router.pathname === props.pathName
               ? props.filledIcon
               : props.outlineIcon
           }
           width="30"
-          height="30"
-          objectPosition="center"
-          className="scale-75 lg:scale-100"
-          alt="Nav Icon"
         />
         <span className="hidden sm:inline-block sm:text-lg lg:text-xl">
           {props.pageName}

@@ -1,4 +1,5 @@
 module.exports = {
   root: true,
-  extends: ["next/babel"],
+  "extends": "next/core-web-vitals",
+  parser: "babel-eslint",
 };

@@ -6,7 +6,12 @@ export default function StackCard({ ...props }) {
       className="w-18 h-18 flex flex-col justify-evenly items-center bg-white border hover:border-2 border-blue-600 font-black rounded-2xl text-xxs font-ter text-black m-2 p-0"
       key={props.key}
     >
-      <Image src={props.src} width="28" height="28" alt={props.tool} />
+      <Image
+        alt={props.tool}
+        height="28"
+        src={props.src}
+        width="28"
+      />
       <span>{props.tool}</span>
     </div>
   );

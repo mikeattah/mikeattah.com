@@ -10,12 +10,13 @@ import { portfolio } from "../portfolio.js";
 import { nanoid } from "nanoid";
 
 export default function Projects({ title, description, ...props }) {
-  let numberSet = new Set();
+  const numberSet = new Set();
   let numberArray = [];
   let projectArray = [];
 
   const selectProjects = () => {
-    let randomNumber = Math.floor(Math.random() * portfolio.length);
+    const randomNumber = Math.floor(Math.random() * portfolio.length);
+
     numberSet.add(randomNumber);
 
     while ([...numberSet].length < 6) {
@@ -30,24 +31,24 @@ export default function Projects({ title, description, ...props }) {
         portfolio[numberArray[2]],
         portfolio[numberArray[3]],
         portfolio[numberArray[4]],
-        portfolio[numberArray[5]],
+        portfolio[numberArray[5]]
       ];
     }
   };
 
   selectProjects();
-  // console.log(numberSet);
+  // Console.log(numberSet);
 
   return (
     <Layout pageTitle={`${title} | Projects`}>
       <div className="relative w-full h-full flex flex-col justify-center items-center">
         <Image
-          src="/fakurian-design-GJKx5lhwU3M-unsplash.jpg"
+          alt="Background sky blue waves"
+          className="-z-10"
           layout="fill"
           objectFit="cover"
           objectPosition="top left"
-          alt="Background sky blue waves"
-          className="-z-10"
+          src="/fakurian-design-GJKx5lhwU3M-unsplash.jpg"
         />
         <div className="w-full h-16 flex flex-row justify-center items-center my-3">
           <h1 className="text-black text-3xl sm:text-5xl md:text-5.5xl lg:text-5xl font-bold leading-tight font-pri m-0">
@@ -59,36 +60,37 @@ export default function Projects({ title, description, ...props }) {
         </div>
         <div className="w-full flex flex-row flex-grow flex-wrap justify-evenly items-start m-0 p-0">
           {projectArray.map((project, index) => {
-            let { src, alt, title, tools, description, repo, site } = project;
+            const { src, alt, title, tools, description, repo, site } = project;
+
             return (
               <ProjectCard
-                key={nanoid()}
-                src={src}
                 alt={alt}
-                title={title}
-                tools={tools}
                 description={description}
+                key={nanoid()}
                 repo={repo}
                 site={site}
+                src={src}
+                title={title}
+                tools={tools}
               />
             );
           })}
         </div>
         <div className="w-full h-16 flex flex-row justify-center items-start m-0 p-0">
           <CodeEditorIcon
+            altName="Github"
             hrefName="https://github.com/mikeattah"
             srcName="/githubb.png"
-            altName="Github"
           />
           <CodeEditorIcon
+            altName="Codepen"
             hrefName="https://codepen.io/mikeattah"
             srcName="/codepenn.png"
-            altName="Codepen"
           />
           <CodeEditorIcon
+            altName="Codesandbox"
             hrefName="https://codesandbox.io/u/mikeattah"
             srcName="/codesandboxx.png"
-            altName="Codesandbox"
           />
         </div>
       </div>
@@ -97,12 +99,12 @@ export default function Projects({ title, description, ...props }) {
 }
 
 export async function getStaticProps() {
-  const configData = await import(`../siteConfig.json`);
+  const configData = await import("../siteConfig.json");
 
   return {
     props: {
       title: configData.default.title,
-      description: configData.default.description,
-    },
+      description: configData.default.description
+    }
   };
 }
