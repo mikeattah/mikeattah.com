@@ -1,90 +1,86 @@
+// import { useEffect } from "react";
 import Image from "next/image";
-import styles from "../styles/Contact.module.scss";
-import Layout from "../components/layout.js";
-import { library } from "@fortawesome/fontawesome-svg-core";
-import {
-  faCoffee,
-  faAt,
-  faMobile,
-  faDownload,
-} from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { fab } from "@fortawesome/free-brands-svg-icons";
 
-library.add(fab);
+import Layout from "../components/Layout.js";
+import ContactIcon from "../components/ContactIcon.js";
 
 export default function Contact({ title, description, ...props }) {
+  // useEffect(() => {
+  //   const text = document.querySelector(".text-string");
+  //   const drinkCoffee = "How do you like your coffee?";
+  //   const drinkWater = "However, hope you drank water today?";
+
+  //   setInterval(() => {
+  //     text.innerHTML =
+  //       text.textContent === drinkCoffee ? drinkWater : drinkCoffee;
+  //   }, 5000);
+  //   return clearInterval;
+  // }, []);
+
   return (
     <Layout pageTitle={`${title} | Contact`}>
-      <div className={styles.container}>
-        <div className={styles.workcontainer}>
-          <p className={styles.workone}>Let&apos;s work together!</p>
-          <div className={styles.worktwo}>
-            <span className={styles.coffeetext}>
+      <div className="w-full h-full flex flex-col-reverse lg:flex-row-reverse">
+        <div className="w-full lg:w-12/25 h-1/3 lg:h-full relative -z-10">
+          <Image
+            src="/paaatterns-024-p-1080.png"
+            layout="fill"
+            objectFit="cover"
+            objectPosition="top left"
+            alt="Paaattern's Inn"
+            className=""
+          />
+        </div>
+        <div className="w-full lg:w-13/25 h-2/3 lg:h-full flex flex-col justify-center items-center lg:items-start relative">
+          <Image
+            src="/fakurian-design-GJKx5lhwU3M-unsplash.jpg"
+            layout="fill"
+            objectFit="cover"
+            objectPosition="top left"
+            alt="Paaattern's Inn"
+            className="-z-10"
+          />
+          <div className="p-1.5 flex flex-col items-center lg:items-start">
+            <h1 className="text-black text-5xl sm:text-8xl lg:text-6.5xl xl:text-7.5xl font-bold my-6 mx-0 p-0 font-pri">
+              Let&apos;s{" "}
+              <span className="text-blue-600 text-5xl sm:text-8xl lg:text-6.5xl xl:text-7.5xl font-bold my-6 mx-0 p-0 font-pri">
+                build together!
+              </span>
+            </h1>
+            <p className="text-2.5xl sm:text-5xl lg:text-4.5xl xl:text-4.5xl mb-4 text-string font-sec">
               How do you like your coffee?
-            </span>
+            </p>
           </div>
-        </div>
-        <div className={styles.profilecontainer}>
-          <a
-            className={styles.githubprofile}
-            href="https://github.com/mikeattah"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FontAwesomeIcon
-              icon={["fab", "github"]}
-              className={styles.profileicon}
+          <div className="p-2.5 w-full md:w-9/12 lg:w-3/4 xl:w-1/2 h-2/12 flex flex-row justify-around lg:justify-between items-center lg:items-start">
+            <ContactIcon
+              href="https://github.com/mikeattah"
+              src="/logo-github.svg"
+              alt="GitHub"
             />
-            <span className={styles.profiletext}>GitHub</span>
-          </a>
-          <a
-            className={styles.linkedinprofile}
-            href="https://www.linkedin.com/in/mikeattah/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FontAwesomeIcon
-              icon={["fab", "linkedin"]}
-              className={styles.profileicon}
+            <ContactIcon
+              href="https://www.linkedin.com/in/mikeattah/"
+              src="/logo-linkedin.svg"
+              alt="LinkedIn"
             />
-            <span className={styles.profiletext}>LinkedIn</span>
-          </a>
-          <a
-            className={styles.twitterprofile}
-            href="https://twitter.com/miikeattah"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FontAwesomeIcon
-              icon={["fab", "twitter"]}
-              className={styles.profileicon}
+            <ContactIcon
+              href="https://twitter.com/miikeattah"
+              src="/logo-twitter.svg"
+              alt="Twitter"
             />
-            <span className={styles.profiletext}>Twitter</span>
-          </a>
-          <a className={styles.maillink} href="mailto:mailenemona@gmail.com">
-            <FontAwesomeIcon icon={faAt} className={styles.profileicon} />
-            <span className={styles.profiletext}>Mail</span>
-          </a>
-          <a className={styles.calllink} href="tel:+2347013194373">
-            <FontAwesomeIcon icon={faMobile} className={styles.profileicon} />
-            <span className={styles.profiletext}>Call</span>
-          </a>
-        </div>
-        <div className={styles.emoticon}>
-          <Image src="/cool.png" height="100" width="100" alt="cool emoticon" />
-          <div className={styles.attribute}>
-            Stickers made by{" "}
-            <a
-              href="https://www.flaticon.com/authors/stickers"
-              title="Stickers"
-            >
-              Stickers
-            </a>{" "}
-            from{" "}
-            <a href="https://www.flaticon.com/" title="Flaticon">
-              www.flaticon.com
-            </a>
+            <ContactIcon
+              href="mailto:mailenemona@gmail.com"
+              src="/mail.svg"
+              alt="Email"
+            />
+            <ContactIcon
+              href="skype:attahmona?call"
+              src="/logo-skype.svg"
+              alt="Skype Call"
+            />
+            <ContactIcon
+              href="tel:+2347013194373"
+              src="/phone-portrait.svg"
+              alt="Mobile"
+            />
           </div>
         </div>
       </div>
@@ -93,7 +89,7 @@ export default function Contact({ title, description, ...props }) {
 }
 
 export async function getStaticProps() {
-  const configData = await import(`../siteconfig.json`);
+  const configData = await import(`../siteConfig.json`);
 
   return {
     props: {

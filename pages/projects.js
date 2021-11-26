@@ -1,128 +1,95 @@
 import Image from "next/image";
-import styles from "../styles/Projects.module.scss";
-import Layout from "../components/layout.js";
-import { projectRecords } from "../projectrecord.js";
-import { faAngleDoubleRight } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// https://mikeattah.com/public
+
+import Layout from "../components/Layout.js";
+import CodeEditorIcon from "../components/CodeEditorIcon.js";
+import ProjectCard from "../components/ProjectCard.js";
+
+import { portfolio } from "../portfolio.js";
+
+import { nanoid } from "nanoid";
 
 export default function Projects({ title, description, ...props }) {
+  let numberSet = new Set();
+  let numberArray = [];
+  let projectArray = [];
+
+  const selectProjects = () => {
+    let randomNumber = Math.floor(Math.random() * portfolio.length);
+    numberSet.add(randomNumber);
+
+    while ([...numberSet].length < 6) {
+      selectProjects();
+    }
+
+    if ([...numberSet].length === 6) {
+      numberArray = [...numberSet];
+      projectArray = [
+        portfolio[numberArray[0]],
+        portfolio[numberArray[1]],
+        portfolio[numberArray[2]],
+        portfolio[numberArray[3]],
+        portfolio[numberArray[4]],
+        portfolio[numberArray[5]],
+      ];
+    }
+  };
+
+  selectProjects();
+  // console.log(numberSet);
+
   return (
     <Layout pageTitle={`${title} | Projects`}>
-      <div className={styles.container}>
-        <div className={styles.projecttitle}>
-          <h1>Some of my projects</h1>
+      <div className="relative w-full h-full flex flex-col justify-center items-center">
+        <Image
+          src="/fakurian-design-GJKx5lhwU3M-unsplash.jpg"
+          layout="fill"
+          objectFit="cover"
+          objectPosition="top left"
+          alt="Background sky blue waves"
+          className="-z-10"
+        />
+        <div className="w-full h-16 flex flex-row justify-center items-center my-3">
+          <h1 className="text-black text-3xl sm:text-5xl md:text-5.5xl lg:text-5xl font-bold leading-tight font-pri m-0">
+            Some of{" "}
+            <span className="text-blue-600 text-3xl sm:text-5xl md:text-5.5xl lg:text-5xl font-bold leading-tight font-pri m-0">
+              my projects
+            </span>
+          </h1>
         </div>
-        <div className={styles.projectgroup}>
-          <a className={styles.project} href={projectRecords[0].href}>
-            <div className={styles.projectimages}>
-              <Image
-                src={projectRecords[0].src}
-                layout="fill"
-                objectFit="cover"
-                objectPosition="50% 50%"
-                alt={projectRecords[0].cap}
-                className={styles.image}
+        <div className="w-full flex flex-row flex-grow flex-wrap justify-evenly items-start m-0 p-0">
+          {projectArray.map((project, index) => {
+            let { src, alt, title, tools, description, repo, site } = project;
+            return (
+              <ProjectCard
+                key={nanoid()}
+                src={src}
+                alt={alt}
+                title={title}
+                tools={tools}
+                description={description}
+                repo={repo}
+                site={site}
               />
-            </div>
-            <div className={styles.projectcaption}>
-              <span>{projectRecords[0].cap}</span>
-            </div>
-          </a>
-          <a className={styles.project} href={projectRecords[1].href}>
-            <div className={styles.projectimages}>
-              <Image
-                src={projectRecords[1].src}
-                layout="fill"
-                objectFit="cover"
-                alt={projectRecords[1].cap}
-                className={styles.image}
-              />
-            </div>
-            <div className={styles.projectcaption}>
-              <span>{projectRecords[1].cap}</span>
-            </div>
-          </a>
-          <a className={styles.project} href={projectRecords[2].href}>
-            <div className={styles.projectimages}>
-              <Image
-                src={projectRecords[2].src}
-                layout="fill"
-                objectFit="cover"
-                alt={projectRecords[2].cap}
-                className={styles.image}
-              />
-            </div>
-            <div className={styles.projectcaption}>
-              <span>{projectRecords[2].cap}</span>
-            </div>
-          </a>
-          {/* 4, 5 & 6 are not available on mobile */}
-          <a
-            className={[styles.project, styles.hideBlock].join(" ")}
-            href={projectRecords[3].href}
-          >
-            <div className={styles.projectimages}>
-              <Image
-                src={projectRecords[3].src}
-                layout="fill"
-                objectFit="cover"
-                alt={projectRecords[3].cap}
-                className={styles.image}
-              />
-            </div>
-            <div className={styles.projectcaption}>
-              <span>{projectRecords[3].cap}</span>
-            </div>
-          </a>
-          {/* 5 & 6 are not available on tablet */}
-          <a
-            className={[styles.project, styles.hideBlock].join(" ")}
-            href={projectRecords[4].href}
-          >
-            <div className={styles.projectimages}>
-              <Image
-                src={projectRecords[4].src}
-                layout="fill"
-                objectFit="cover"
-                alt={projectRecords[4].cap}
-                className={styles.image}
-              />
-            </div>
-            <div className={styles.projectcaption}>
-              <span>{projectRecords[4].cap}</span>
-            </div>
-          </a>
-          <a
-            className={[styles.project, styles.hideBlock].join(" ")}
-            href={projectRecords[5].href}
-          >
-            <div className={styles.projectimages}>
-              <Image
-                src={projectRecords[5].src}
-                layout="fill"
-                objectFit="cover"
-                alt={projectRecords[5].cap}
-                className={styles.image}
-              />
-            </div>
-            <div className={styles.projectcaption}>
-              <span>{projectRecords[5].cap}</span>
-            </div>
-          </a>
+            );
+          })}
         </div>
-        <div className={styles.projectbutton}>
-          <a
-            className={styles.showall}
-            href="https://codesandbox.io/u/mikeattah"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <span>Show All</span>
-            <FontAwesomeIcon
-              icon={faAngleDoubleRight}
-              className={styles.showallicon}
-            />
-          </a>
+        <div className="w-full h-16 flex flex-row justify-center items-start m-0 p-0">
+          <CodeEditorIcon
+            hrefName="https://github.com/mikeattah"
+            srcName="/githubb.png"
+            altName="Github"
+          />
+          <CodeEditorIcon
+            hrefName="https://codepen.io/mikeattah"
+            srcName="/codepenn.png"
+            altName="Codepen"
+          />
+          <CodeEditorIcon
+            hrefName="https://codesandbox.io/u/mikeattah"
+            srcName="/codesandboxx.png"
+            altName="Codesandbox"
+          />
         </div>
       </div>
     </Layout>
@@ -130,7 +97,7 @@ export default function Projects({ title, description, ...props }) {
 }
 
 export async function getStaticProps() {
-  const configData = await import(`../siteconfig.json`);
+  const configData = await import(`../siteConfig.json`);
 
   return {
     props: {

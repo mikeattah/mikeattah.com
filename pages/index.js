@@ -1,24 +1,67 @@
-import styles from "../styles/Home.module.scss";
-import Layout from "../components/layout.js";
+import Image from "next/image";
+
+import Layout from "../components/Layout.js";
+import StackAnimation from "../components/StackAnimation/StackAnimation.js";
+
+import { stackList } from "../stackList.js";
 
 export default function Home({ title, description, ...props }) {
   return (
     <Layout pageTitle={title} pageDescription={description}>
-      <div className={styles.container}>
-        <main className={styles.main}>
-          <h1 className={styles.title}>
-            Hi I&apos;m <span>Mike!</span>
+      <div className="w-full h-full">
+        <div className="w-full h-2/3 flex flex-col justify-center items-center relative">
+          <Image
+            src="/fakurian-design-GJKx5lhwU3M-unsplash.jpg"
+            layout="fill"
+            objectFit="cover"
+            objectPosition="top left"
+            alt="Paaattern's Inn"
+            className="-z-10"
+          />
+          <h1 className="text-center text-black text-6xl sm:text-9xl font-bold leading-tight font-pri mb-3">
+            Hi I&apos;m{" "}
+            <span className="text-blue-600 text-6xl sm:text-9xl font-bold leading-tight font-pri">
+              Mike!
+            </span>
           </h1>
-          <h3 className={styles.description}>I am a frontend developer</h3>
-          {/* I build web [] mobile [] and desktop [] apps with JavaScript and TypeScript. */}
-        </main>
+          <h3 className="text-black text-center text-3xl sm:text-5xl italic mb-3 font-sec">
+            I am a frontend developer
+          </h3>
+          <StackAnimation stackList={stackList} />
+          {/* I am a Fullstack Developer! */}
+          {/* I Build Extremely Fast */}
+          {/* Web [] Mobile [] and Desktop [] */}
+          {/* MERN Stack Apps. */}
+        </div>
+        <div className="w-full h-1/3 flex flex-row">
+          <div className="w-full lg:w-1/2 h-full relative">
+            <Image
+              src="/paaatterns-022-p-1080.png"
+              layout="fill"
+              objectFit="cover"
+              objectPosition="top"
+              alt="Source Paaattern's Inn"
+              className=""
+            />
+          </div>
+          <div className="hidden lg:flex w-1/2 h-full relative">
+            <Image
+              src="/paaatterns-024-p-1080.png"
+              layout="fill"
+              objectFit="cover"
+              objectPosition="top"
+              alt="Paaattern's Inn"
+              className=""
+            />
+          </div>
+        </div>
       </div>
     </Layout>
   );
 }
 
 export async function getStaticProps() {
-  const configData = await import(`../siteconfig.json`);
+  const configData = await import(`../siteConfig.json`);
 
   return {
     props: {
