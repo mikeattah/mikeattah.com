@@ -8,6 +8,10 @@ I'm also searching for my first fulltime frontend developer role. Hire me! [Resu
 
 Check/Follow me on [Twitter](https://twitter.com/miikeattah) for titbits on my developer journey.
 
+## Screenshot
+
+![Screenshot](/public/screenshot.png)
+
 ## Key Tools and Methods Used
 
 - Git/Github
