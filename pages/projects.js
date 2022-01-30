@@ -1,3 +1,4 @@
+import React from "react";
 import Image from "next/image";
 // https://mikeattah.com/public
 
@@ -31,7 +32,7 @@ export default function Projects({ title, description, ...props }) {
         portfolio[numberArray[2]],
         portfolio[numberArray[3]],
         portfolio[numberArray[4]],
-        portfolio[numberArray[5]]
+        portfolio[numberArray[5]],
       ];
     }
   };
@@ -104,7 +105,7 @@ export async function getStaticProps() {
   return {
     props: {
       title: configData.default.title,
-      description: configData.default.description
-    }
+      description: configData.default.description,
+    },
   };
 }

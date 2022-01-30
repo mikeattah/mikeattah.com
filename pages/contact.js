@@ -1,4 +1,4 @@
-// Import { useEffect } from "react";
+import React from "react";
 import Image from "next/image";
 
 import Layout from "../components/Layout";
@@ -67,7 +67,7 @@ export default function Contact({ title, description, ...props }) {
             />
             <ContactIcon
               alt="Twitter"
-              href="https://twitter.com/miikeattah"
+              href="https://twitter.com/mikeattahx"
               src="/logo-twitter.svg"
             />
             <ContactIcon

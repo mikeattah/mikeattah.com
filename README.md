@@ -1,20 +1,22 @@
 # My Portfolio Website
 
-This repo contains the code for my portfolio website. it is a [Next](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) and hosted on [vercel](https://vercel.com/).
+This repo contains the code for my portfolio website. it is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) and hosted on [vercel](https://vercel.com/).
 
 Pls visit [https://mikeattah.com](https://mikeattah.com) to view site.
 
 I'm also searching for my first fulltime frontend developer role. Hire me! [Resume](https://mikeattah.com/mike_attah_resume_ncl_006.pdf).
 
-Check/Follow me on [Twitter](https://twitter.com/miikeattah) for titbits on my developer journey.
+Check/Follow me on [Twitter](https://twitter.com/mikeattahx) for titbits on my developer journey.
 
 ## Screenshot
 
-![Screenshot](/public/screenshot.png)
+![Home Page Screenshot](/public/screenshot.png)
 
 ## Key Tools and Methods Used
 
-- Git/Github
+- Git
+- Github
+- Vercel
 - HTML
   - Emojis
 - CSS
@@ -25,10 +27,10 @@ Check/Follow me on [Twitter](https://twitter.com/miikeattah) for titbits on my d
   - Background images
 - Sass
 - Tailwind CSS
+  - DaisyUI
+    - Carousel
 - PostCSS
 - Autoprefixer
-- DaisyUI
-  - Carousel
 - JavaScript
   - setInterval
   - Ternary Operator
