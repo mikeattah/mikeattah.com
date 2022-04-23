@@ -1,9 +1,7 @@
 import React from "react";
 import Image from "next/image";
-
 import Layout from "../components/Layout";
 import StackAnimation from "../components/StackAnimation/StackAnimation";
-
 import { stackList } from "../stackList";
 
 export default function Home({ title, description, ...props }) {
@@ -25,14 +23,15 @@ export default function Home({ title, description, ...props }) {
               Mike!
             </span>
           </h1>
-          <h3 className="text-black text-center text-3xl sm:text-5xl italic mb-3 font-sec">
-            I am a frontend developer
-          </h3>
+          <h2 className="text-black text-center text-3xl sm:text-5xl italic mb-3 font-sec">
+            I am a Full Stack Developer of Web, Mobile and Desktop Applications
+            and I am{" "}
+            <span className="text-blue-600 text-3xl sm:text-5xl font-bold leading-tight font-pri">
+              passionate about creating beautiful and intuitive user
+              experiences.
+            </span>{" "}
+          </h2>
           <StackAnimation stackList={stackList} />
-          {/* I am a Fullstack Developer! */}
-          {/* I Build Extremely Fast */}
-          {/* Web [] Mobile [] and Desktop [] */}
-          {/* MERN Stack Apps. */}
         </div>
         <div className="w-full h-1/3 flex flex-row">
           <div className="w-full lg:w-1/2 h-full relative">
