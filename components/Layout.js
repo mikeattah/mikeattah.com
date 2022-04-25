@@ -1,7 +1,6 @@
 import Head from "next/head";
-// Import Image from "next/image";
-
-import NavBar from "./NavBar";
+import Navigation from "./Navigation";
+import FixedSection from "./FixedSection";
 
 export default function Layout({
   children,
@@ -20,13 +19,10 @@ export default function Layout({
         <meta content="https://mikeattah.com" property="og:url" />
         <link href="/favicon.ico" rel="icon" />
       </Head>
-      <div className="max-w-screen h-screen flex flex-col m-0 p-0">
-        <nav className="w-full min-h-16 flex items-center">
-          <NavBar />
-        </nav>
-        <main className="w-full flex flex-col flex-grow items-center">
-          {children}
-        </main>
+      <div className="max-w-screen min-h-screen flex flex-col m-0 p-0">
+        <Navigation />
+        <FixedSection />
+        {children}
       </div>
     </div>
   );

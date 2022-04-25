@@ -1,29 +1,21 @@
 import React from "react";
 import Image from "next/image";
-// https://mikeattah.com/public
-
 import Layout from "../components/Layout";
 import CodeEditorIcon from "../components/CodeEditorIcon";
 import ProjectCard from "../components/ProjectCard";
-
 import { portfolio } from "../portfolio";
-
 import { nanoid } from "nanoid";
 
 export default function Projects({ title, description, ...props }) {
   const numberSet = new Set();
   let numberArray = [];
   let projectArray = [];
-
   const selectProjects = () => {
     const randomNumber = Math.floor(Math.random() * portfolio.length);
-
     numberSet.add(randomNumber);
-
     while ([...numberSet].length < 6) {
       selectProjects();
     }
-
     if ([...numberSet].length === 6) {
       numberArray = [...numberSet];
       projectArray = [
@@ -36,10 +28,7 @@ export default function Projects({ title, description, ...props }) {
       ];
     }
   };
-
   selectProjects();
-  // Console.log(numberSet);
-
   return (
     <Layout pageTitle={`${title} | Projects`}>
       <div className="relative w-full h-full flex flex-col justify-center items-center">
@@ -62,7 +51,6 @@ export default function Projects({ title, description, ...props }) {
         <div className="w-full flex flex-row flex-grow flex-wrap justify-evenly items-start m-0 p-0">
           {projectArray.map((project, index) => {
             const { src, alt, title, tools, description, repo, site } = project;
-
             return (
               <ProjectCard
                 alt={alt}
@@ -101,7 +89,6 @@ export default function Projects({ title, description, ...props }) {
 
 export async function getStaticProps() {
   const configData = await import("../siteConfig.json");
-
   return {
     props: {
       title: configData.default.title,

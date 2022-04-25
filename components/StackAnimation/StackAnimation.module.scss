@@ -114,17 +114,17 @@
 }
 
 @keyframes sideSlide {
-  60% {
+  40% {
     transform: translate(20px, 0) scale(1);
     color: #00e8fc;
   }
 
-  80% {
+  60% {
     transform: translate(20px, 0) scale(1);
     color: #f96e46;
   }
 
-  99% {
+  80% {
     transform: translate(0) scale(1.2);
     color: #f9c846;
   }

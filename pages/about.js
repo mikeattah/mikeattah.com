@@ -1,15 +1,12 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-
 import Layout from "../components/Layout";
 import StackCard from "../components/StackCard";
 import HobbyCard from "../components/HobbyCard";
 import ResumeCard from "../components/ResumeCard";
-
 import { stackLogos } from "../stackLogos";
 import { hobbies } from "../hobbies";
-
 import { nanoid } from "nanoid";
 
 export default function About({ title, description, ...props }) {
@@ -78,9 +75,8 @@ export default function About({ title, description, ...props }) {
           <div className="w-full sm:max-w-full max-h-144 flex flex-col justify-evenly items-center my-1">
             {/* Stack */}
             <div className="w-full max-h-112 flex flex-row flex-wrap justify-center items-center m-0 p-0">
-              {stackLogos.map((stack, index) => {
+              {stackLogos.map((stack) => {
                 const { tool, src } = stack;
-
                 return <StackCard key={nanoid()} src={src} tool={tool} />;
               })}
             </div>
@@ -102,9 +98,8 @@ export default function About({ title, description, ...props }) {
           </div>
           {/* Leisure cards */}
           <div className="w-full h-4/5 space-x-8 carousel carousel-center rounded-box py-0 px-10 sm:px-0">
-            {hobbies.map((hobby, index) => {
+            {hobbies.map((hobby) => {
               const { src, alt } = hobby;
-
               return <HobbyCard key={nanoid()} src={src} alt={alt} />;
             })}
           </div>
@@ -116,7 +111,6 @@ export default function About({ title, description, ...props }) {
 
 export async function getStaticProps() {
   const configData = await import("../siteConfig.json");
-
   return {
     props: {
       title: configData.default.title,

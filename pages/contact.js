@@ -1,26 +1,9 @@
 import React from "react";
 import Image from "next/image";
-
 import Layout from "../components/Layout";
 import ContactIcon from "../components/ContactIcon";
 
 export default function Contact({ title, description, ...props }) {
-  /*
-   * UseEffect(() => {
-   *   const text = document.querySelector(".text-string");
-   *   const drinkCoffee = "How do you like your coffee?";
-   *   const drinkWater = "However, hope you drank water today?";
-   */
-
-  /*
-   *   SetInterval(() => {
-   *     text.innerHTML =
-   *       text.textContent === drinkCoffee ? drinkWater : drinkCoffee;
-   *   }, 5000);
-   *   return clearInterval;
-   * }, []);
-   */
-
   return (
     <Layout pageTitle={`${title} | Contact`}>
       <div className="w-full h-full flex flex-col-reverse lg:flex-row-reverse">
@@ -94,7 +77,6 @@ export default function Contact({ title, description, ...props }) {
 
 export async function getStaticProps() {
   const configData = await import("../siteConfig.json");
-
   return {
     props: {
       title: configData.default.title,
