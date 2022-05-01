@@ -10,7 +10,7 @@ Check/Follow me on [Twitter](https://twitter.com/mikeattahx) for titbits on my d
 
 ## Screenshot
 
-![Home Page Screenshot](/public/screenshot.png)
+![Home Page Screenshot](/public/images/screenshot.png)
 
 ## Key Tools and Methods Used
 

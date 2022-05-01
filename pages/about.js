@@ -1,13 +1,13 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { nanoid } from "nanoid";
 import Layout from "../components/Layout";
 import StackCard from "../components/StackCard";
 import HobbyCard from "../components/HobbyCard";
 import ResumeCard from "../components/ResumeCard";
-import { stackLogos } from "../stackLogos";
-import { hobbies } from "../hobbies";
-import { nanoid } from "nanoid";
+import { stackLogos } from "../public/data/stackLogos";
+import { hobbies } from "../public/data/hobbies";
 
 export default function About({ title, description, ...props }) {
   return (

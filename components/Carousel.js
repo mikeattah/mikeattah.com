@@ -1,9 +1,11 @@
-import NavIcon from "./NavIcon";
+import React from "react";
 
-export default function Carousel() {
+function Carousel(props) {
   return (
     <div className="w-full h-full flex flex-row sm:justify-end sm:border-b-2 shadow-md">
       <div></div>
     </div>
   );
 }
+
+export default Carousel;
