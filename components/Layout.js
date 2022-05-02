@@ -20,10 +20,12 @@ export default function Layout({
         <meta content="https://mikeattah.com" property="og:url" />
         <link href="/favicon.ico" rel="icon" />
       </Head>
-      <div className="max-w-screen min-h-screen flex flex-col m-0 p-0">
+      <div className="max-w-screen min-h-screen flex flex-col justify-center items-center overflow-y-auto">
+        <div className="w-[900px] h-[45px] fixed top-0 right-0"></div>
         <Navigation />
         <FixedSection />
         {children}
+        <div className="w-[900px] h-[45px] fixed bottom-0 right-0"></div>
       </div>
     </div>
   );

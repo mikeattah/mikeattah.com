@@ -1,16 +1,16 @@
 import React from "react";
 import Layout from "../components/Layout";
 import Carousel from "../components/Carousel";
-import ProjectSection from "../components/ProjectSection";
+import ProjectsSection from "../components/ProjectsSection";
 
 export default function Home({ title, description, ...props }) {
   return (
     <Layout pageDescription={description} pageTitle={title}>
-      <main className="w-[900px] h-full flex flex-col border">
+      <main className="w-[900px] min-h-min flex flex-col border">
         <Carousel />
-        <ProjectSection />
+        <ProjectsSection />
       </main>
-      <footer></footer>
+      <footer className="w-[900px] h-[90px] flex flex-row border"></footer>
     </Layout>
   );
 }

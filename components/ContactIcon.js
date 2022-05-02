@@ -1,21 +1,11 @@
 import Image from "next/image";
 
-export default function ContactIcon({ ...props }) {
+export default function ContactIcon(props) {
+  const { icon, text } = props;
   return (
-    <a
-      className="transform  sm:scale-135 lg:scale-100"
-      href={props.href}
-      rel="noreferrer"
-      target="_blank"
-    >
-      <Image
-        alt={props.alt}
-        className="hover:opacity-50"
-        height="30"
-        objectPosition="center"
-        src={props.src}
-        width="30"
-      />
-    </a>
+    <div className="w-[33%] h-full flex flex-col">
+      <i>{icon}</i>
+      <p>{text}</p>
+    </div>
   );
 }
