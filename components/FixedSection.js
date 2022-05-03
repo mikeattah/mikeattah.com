@@ -1,10 +1,9 @@
-import React from "react";
 import Image from "next/image";
 import StackAnimation from "./StackAnimation/StackAnimation";
 import { stackList } from "../public/data/stackList";
 import SocialMediaIcons from "./SocialMediaIcons";
 
-function FixedSection(props) {
+export default function FixedSection(props) {
   return (
     <section className="w-[300px] h-full flex flex-col justify-center items-center border">
       <div className="w-[200px] h-[200px] rounded-full relative">
@@ -35,5 +34,3 @@ function FixedSection(props) {
     </section>
   );
 }
-
-export default FixedSection;

@@ -5,10 +5,7 @@ import { useRouter } from "next/router";
 export default function Navicon({ ...props }) {
   const router = useRouter();
   return (
-    <Link
-      href={props.pathName}
-      passHref
-    >
+    <Link href={props.pathName} passHref>
       <a
         className={
           router.pathname === props.pathName

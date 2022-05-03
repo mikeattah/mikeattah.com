@@ -1,4 +1,3 @@
-import React from "react";
 import Image from "next/image";
 import { nanoid } from "nanoid";
 import Layout from "../components/Layout";

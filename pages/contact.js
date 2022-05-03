@@ -1,4 +1,3 @@
-import React from "react";
 import Layout from "../components/Layout";
 import ContactIcon from "../components/ContactIcon";
 import PageHeader from "../components/PageHeader";

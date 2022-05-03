@@ -1,6 +1,4 @@
-import React from "react";
-
-function SocialMediaIcons(props) {
+export default function SocialMediaIcons(props) {
   const { link } = props;
   return (
     <a href={link}>
@@ -8,5 +6,3 @@ function SocialMediaIcons(props) {
     </a>
   );
 }
-
-export default SocialMediaIcons;

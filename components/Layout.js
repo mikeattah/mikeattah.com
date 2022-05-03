@@ -1,4 +1,3 @@
-import React from "react";
 import Head from "next/head";
 import Navigation from "./Navigation";
 import FixedSection from "./FixedSection";
@@ -18,7 +17,7 @@ export default function Layout({
         <meta content={pageDescription} property="og:description" />
         <meta content="website" property="og:type" />
         <meta content="https://mikeattah.com" property="og:url" />
-        <link href="/favicon.ico" rel="icon" />
+        <link href="/images/icons/favicon.ico" rel="icon" />
       </Head>
       <div className="max-w-screen min-h-screen flex flex-col justify-center items-center overflow-y-auto">
         <div className="w-[900px] h-[45px] fixed top-0 right-0"></div>

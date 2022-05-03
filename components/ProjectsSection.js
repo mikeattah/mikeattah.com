@@ -1,11 +1,10 @@
-import React from "react";
 import Image from "next/image";
 import { nanoid } from "nanoid";
 import CodeEditorIcon from "../components/CodeEditorIcon";
 import ProjectCard from "../components/ProjectCard";
 import { portfolio } from "../public/data/portfolio";
 
-function ProjectsSection(props) {
+export default function ProjectsSection(props) {
   const numberSet = new Set();
   let numberArray = [];
   let projectArray = [];
@@ -47,7 +46,7 @@ function ProjectsSection(props) {
         </h1>
       </div>
       <div className="w-full flex flex-row flex-grow flex-wrap justify-evenly items-start m-0 p-0">
-        {projectArray.map((project, index) => {
+        {projectArray.map((project) => {
           const { src, alt, title, tools, description, repo, site } = project;
           return (
             <ProjectCard
@@ -83,5 +82,3 @@ function ProjectsSection(props) {
     </div>
   );
 }
-
-export default ProjectsSection;

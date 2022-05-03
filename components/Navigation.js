@@ -1,4 +1,3 @@
-import React from "react";
 import NavIcon from "./NavIcon";
 
 export default function Navigation() {
