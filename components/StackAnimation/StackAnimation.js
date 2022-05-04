@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { animate, stack } from "./StackAnimation.module.scss";
 
-export default function StackAnimation({ ...props }) {
+export default function StackAnimation({ stackList }) {
   useEffect(() => {
     let i = 0;
     const stack = document.querySelector(".stackitem");
@@ -9,18 +9,18 @@ export default function StackAnimation({ ...props }) {
       while (stack.firstChild) {
         stack.removeChild(stack.firstChild);
       }
-      props.stackList[i].split("").forEach((letter) => {
+      stackList[i].split("").forEach((letter) => {
         const letterElement = document.createElement("span");
         letterElement.innerHTML = letter === " " ? "&nbsp;" : letter;
         stack.appendChild(letterElement);
       });
       i++;
-      if (i === props.stackList.length - 1) {
+      if (i === stackList.length - 1) {
         i = 0;
       }
     }, 2000);
     return clearInterval;
-  }, [props.stackList]);
+  }, [stackList]);
   return (
     <div
       className={`${animate} ${stack} stackitem text-2xl sm:text-3xl lg:text-3xl font-sec`}

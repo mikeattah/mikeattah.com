@@ -1,5 +1,4 @@
-export default function PageHeader(props) {
-  const { page } = props;
+export default function PageHeader({ page }) {
   return (
     <div className="w-full h-full flex flex-col justify-center items-center">
       {/* Dark Blue Pattern */}

@@ -3,9 +3,9 @@ import StackAnimation from "./StackAnimation/StackAnimation";
 import { stackList } from "../public/data/stackList";
 import SocialMediaIcons from "./SocialMediaIcons";
 
-export default function FixedSection(props) {
+export default function SideBar() {
   return (
-    <section className="w-[300px] h-full flex flex-col justify-center items-center border">
+    <section className="w-[300px] h-screen fixed top-0 left-0 flex flex-col justify-center items-center z-20 border">
       <div className="w-[200px] h-[200px] rounded-full relative">
         <Image
           alt="Mike Attah"

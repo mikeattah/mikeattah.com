@@ -1,15 +1,14 @@
 import Layout from "../components/Layout";
 import Carousel from "../components/Carousel";
-import ProjectsSection from "../components/ProjectsSection";
+import Projects from "../components/Projects";
 
 export default function Home({ title, description, ...props }) {
   return (
-    <Layout pageDescription={description} pageTitle={title}>
-      <main className="w-[900px] min-h-min flex flex-col border">
+    <Layout title={`${title} | Home`} description={description}>
+      <div className="w-[900px] min-h-min flex flex-col mt-[135px] border">
         <Carousel />
-        <ProjectsSection />
-      </main>
-      <footer className="w-[900px] h-[90px] flex flex-row border"></footer>
+        <Projects />
+      </div>
     </Layout>
   );
 }

@@ -1,21 +1,21 @@
 import Image from "next/image";
 
-export default function CodeEditorIcon({ ...props }) {
+export default function CodeEditorIcon({ href, src, alt }) {
   return (
     <a
       className="relative w-10 h-10 mx-3 rounded-full ring-4 ring-white shadow-lg"
-      href={props.hrefName}
+      href={href}
       rel="noreferrer"
       target="_blank"
     >
       <Image
-        alt={props.altName}
+        alt={alt}
         className="rounded-full"
         layout="fill"
         objectFit="cover"
         objectPosition="50% 50%"
-        src={props.srcName}
-        title={props.altName}
+        src={src}
+        title={alt}
       />
     </a>
   );

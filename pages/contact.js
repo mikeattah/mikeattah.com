@@ -1,10 +1,10 @@
-import Layout from "../components/Layout";
 import ContactIcon from "../components/ContactIcon";
+import Layout from "../components/Layout";
 import PageHeader from "../components/PageHeader";
 
 export default function Contact({ title, description, ...props }) {
   return (
-    <Layout pageTitle={`${title} | Contact`}>
+    <Layout title={`${title} | Contact`} description={description}>
       <PageHeader page="Contact" />
       <div className="w-full lg:w-13/25 h-2/3 lg:h-full flex flex-col justify-center items-center lg:items-start relative">
         <div className="p-1.5 flex flex-col justify-center items-center">

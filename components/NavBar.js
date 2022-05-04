@@ -2,7 +2,7 @@ import NavIcon from "./NavIcon";
 
 export default function Navigation() {
   return (
-    <nav className="w-full h-full flex flex-row sm:justify-end sm:border-b-2 shadow-md">
+    <nav className="w-[900px] h-[90px] fixed top-[45px] flex flex-row sm:justify-end sm:border-b-2 shadow-md z-10 border">
       <NavIcon
         filledIcon="/images/icons/home.svg"
         outlineIcon="/images/icons/home-outline.svg"

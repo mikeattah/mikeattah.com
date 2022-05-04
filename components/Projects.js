@@ -1,10 +1,10 @@
 import Image from "next/image";
 import { nanoid } from "nanoid";
-import CodeEditorIcon from "../components/CodeEditorIcon";
-import ProjectCard from "../components/ProjectCard";
+import CodeEditorIcon from "./CodeEditorIcon";
+import ProjectCard from "./ProjectCard";
 import { portfolio } from "../public/data/portfolio";
 
-export default function ProjectsSection(props) {
+export default function ProjectsSection() {
   const numberSet = new Set();
   let numberArray = [];
   let projectArray = [];
@@ -50,33 +50,33 @@ export default function ProjectsSection(props) {
           const { src, alt, title, tools, description, repo, site } = project;
           return (
             <ProjectCard
-              alt={alt}
-              description={description}
               key={nanoid()}
-              repo={repo}
-              site={site}
               src={src}
+              alt={alt}
               title={title}
               tools={tools}
+              description={description}
+              repo={repo}
+              site={site}
             />
           );
         })}
       </div>
       <div className="w-full h-16 flex flex-row justify-center items-start m-0 p-0">
         <CodeEditorIcon
-          altName="Github"
-          hrefName="https://github.com/mikeattah"
-          srcName="/githubb.png"
+          href="https://github.com/mikeattah"
+          src="/githubb.png"
+          alt="Github"
         />
         <CodeEditorIcon
-          altName="Codepen"
-          hrefName="https://codepen.io/mikeattah"
-          srcName="/codepenn.png"
+          href="https://codepen.io/mikeattah"
+          src="/codepenn.png"
+          alt="Codepen"
         />
         <CodeEditorIcon
-          altName="Codesandbox"
-          hrefName="https://codesandbox.io/u/mikeattah"
-          srcName="/codesandboxx.png"
+          href="https://codesandbox.io/u/mikeattah"
+          src="/codesandboxx.png"
+          alt="Codesandbox"
         />
       </div>
     </div>

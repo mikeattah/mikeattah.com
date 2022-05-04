@@ -1,15 +1,15 @@
 import Image from "next/image";
 
-export default function HobbyCard({ ...props }) {
+export default function HobbyCard({ src, alt }) {
   return (
-    <div className="relative w-64 h-full carousel-item m-0 p-0" key={props.key}>
+    <div className="relative w-64 h-full carousel-item m-0 p-0">
       <Image
-        alt={props.alt}
+        alt={alt}
         className="rounded-xl"
         layout="fill"
         objectFit="cover"
         objectPosition="center"
-        src={props.src}
+        src={src}
       />
     </div>
   );

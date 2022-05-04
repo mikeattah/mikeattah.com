@@ -1,16 +1,16 @@
 import Image from "next/image";
 import { nanoid } from "nanoid";
 import Layout from "../components/Layout";
-import StackCard from "../components/StackCard";
 import HobbyCard from "../components/HobbyCard";
 import OutlineButton from "../components/OutlineButton";
+import PageHeader from "../components/PageHeader";
+import StackCard from "../components/StackCard";
 import { stackLogos } from "../public/data/stackLogos";
 import { hobbies } from "../public/data/hobbies";
-import PageHeader from "../components/PageHeader";
 
 export default function About({ title, description, ...props }) {
   return (
-    <Layout pageTitle={`${title} | About`}>
+    <Layout title={`${title} | About`} description={description}>
       {/* Top Container */}
       <PageHeader page="About" />
       {/* Bottom Container */}

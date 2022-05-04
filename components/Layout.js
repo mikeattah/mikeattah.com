@@ -1,31 +1,28 @@
 import Head from "next/head";
-import Navigation from "./Navigation";
-import FixedSection from "./FixedSection";
+import Footer from "./Footer";
+import NavBar from "./NavBar";
+import SideBar from "./SideBar";
 
-export default function Layout({
-  children,
-  pageTitle,
-  pageDescription,
-  ...props
-}) {
+export default function Layout({ children, title, description, ...props }) {
   return (
-    <div>
+    <>
       <Head>
-        <title property="og:title">{pageTitle}</title>
+        <title property="og:title">{title}</title>
         <meta charSet="utf-8" />
         <meta content="width=device-width,initial-scale=1" name="viewport" />
-        <meta content={pageDescription} property="og:description" />
+        <meta content={description} property="og:description" />
         <meta content="website" property="og:type" />
         <meta content="https://mikeattah.com" property="og:url" />
         <link href="/images/icons/favicon.ico" rel="icon" />
       </Head>
-      <div className="max-w-screen min-h-screen flex flex-col justify-center items-center overflow-y-auto">
-        <div className="w-[900px] h-[45px] fixed top-0 right-0"></div>
-        <Navigation />
-        <FixedSection />
-        {children}
-        <div className="w-[900px] h-[45px] fixed bottom-0 right-0"></div>
+      <div className="max-w-screen min-h-screen flex flex-row justify-center items-center overflow-y-auto">
+        <div className="w-full h-[45px] fixed top-0 left-0 z-10 border"></div>
+        <SideBar />
+        <NavBar />
+        <main className="min-w-min min-h-min">{children}</main>
+        <Footer />
+        <div className="w-full h-[45px] fixed bottom-0 left-0 z-10 border"></div>
       </div>
-    </div>
+    </>
   );
 }
