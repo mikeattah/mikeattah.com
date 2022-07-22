@@ -1,6 +1,6 @@
 export const portfolio = [
   {
-    src: "/projects/base-apparel-coming-soon.jpg",
+    src: "/images/projects/base-apparel-coming-soon.jpg",
     alt: "Screenshot of Base Apparel Coming Soon Page",
     title: "Base Apparel Coming Soon",
     tools: "HTML, CSS, JavaScript & jQuery.",
@@ -10,7 +10,7 @@ export const portfolio = [
     site: "https://mikeattah.github.io/base-apparel-coming-soon",
   },
   {
-    src: "/projects/javascript-calculator.png",
+    src: "/images/projects/javascript-calculator.png",
     alt: "Screenshot of JavaScript Calculator",
     title: "JavaScript Calculator",
     tools: "HTML, CSS, JavaScript & React.js.",
@@ -20,7 +20,7 @@ export const portfolio = [
     site: "https://mikeattah.github.io/javascript-calculator",
   },
   {
-    src: "/projects/drum-machine.png",
+    src: "/images/projects/drum-machine.png",
     alt: "Screenshot of Drum Machine",
     title: "Drum Machine",
     tools: "HTML, CSS, JavaScript & React.js.",
@@ -30,7 +30,7 @@ export const portfolio = [
     site: "https://mikeattah.github.io/drum-machine",
   },
   {
-    src: "/projects/random-quote-machine.png",
+    src: "/images/projects/random-quote-machine.png",
     alt: "Screenshot of Random Quote Machine",
     title: "Random Quote Machine",
     tools: "HTML, CSS, JavaScript & React.js.",
@@ -40,7 +40,7 @@ export const portfolio = [
     site: "https://mikeattah.github.io/random-quote-machine",
   },
   {
-    src: "/projects/markdown-previewer.png",
+    src: "/images/projects/markdown-previewer.png",
     alt: "Screenshot of Markdown Previewer",
     title: "Markdown Previewer",
     tools: "HTML, CSS, JavaScript, React.js & Markedjs.",
@@ -50,7 +50,7 @@ export const portfolio = [
     site: "https://mikeattah.github.io/markdown-previewer",
   },
   {
-    src: "/projects/stop-clock.png",
+    src: "/images/projects/stop-clock.png",
     alt: "Screenshot of 25 + 5 Clock",
     title: "25 + 5 Clock",
     tools: "HTML, CSS, JavaScript & React.js.",
@@ -60,7 +60,7 @@ export const portfolio = [
     site: "https://mikeattah.github.io/25-5-clock",
   },
   {
-    src: "/projects/four-card-features-section.jpg",
+    src: "/images/projects/four-card-features-section.jpg",
     alt: "Screenshot of Four Card Feature Section",
     title: "Four Card Feature Section",
     tools: "HTML & CSS.",
@@ -70,7 +70,7 @@ export const portfolio = [
     site: "https://mikeattah.github.io/four-card-feature-section",
   },
   {
-    src: "/projects/huddle-landing-page.jpg",
+    src: "/images/projects/huddle-landing-page.jpg",
     alt: "Screenshot of Huddle Landing Page",
     title: "Huddle Landing Page",
     tools: "HTML & CSS.",
@@ -80,7 +80,7 @@ export const portfolio = [
     site: "https://mikeattah.github.io/huddle-landing-page",
   },
   {
-    src: "/projects/intro-component-with-signup-form.jpg",
+    src: "/images/projects/intro-component-with-signup-form.jpg",
     alt: "Screenshot of Intro Component with Signup Form",
     title: "Intro Component with Signup Form",
     tools: "HTML, CSS, JavaScript & jQuery.",
@@ -90,7 +90,7 @@ export const portfolio = [
     site: "https://mikeattah.github.io/intro-component-with-signup-form",
   },
   {
-    src: "/projects/pricing-component-with-toggle.jpg",
+    src: "/images/projects/pricing-component-with-toggle.jpg",
     alt: "Screenshot of Pricing Component with Toggle",
     title: "Pricing Component with Toggle",
     tools: "HTML, CSS & JavaScript.",
@@ -100,7 +100,7 @@ export const portfolio = [
     site: "https://mikeattah.github.io/pricing-component-with-toggle",
   },
   {
-    src: "/projects/single-price-grid-component.jpg",
+    src: "/images/projects/single-price-grid-component.jpg",
     alt: "Screenshot of Single Price Grid Component",
     title: "Single Price Grid Component",
     tools: "HTML & CSS.",
@@ -111,5 +111,5 @@ export const portfolio = [
   },
 ];
 
-console.log(portfolio.length);
+// console.log(portfolio.length);
 // description <= 120 characters

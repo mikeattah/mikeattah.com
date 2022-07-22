@@ -5,28 +5,20 @@ import ProjectCard from "./ProjectCard";
 import { portfolio } from "../public/data/portfolio";
 
 export default function ProjectsSection() {
-  const numberSet = new Set();
-  let numberArray = [];
-  let projectArray = [];
+  const uniqueIndices = new Set(),
+    selectedProjects = [];
   const selectProjects = () => {
-    const randomNumber = Math.floor(Math.random() * portfolio.length);
-    numberSet.add(randomNumber);
-    while ([...numberSet].length < 6) {
-      selectProjects();
-    }
-    if ([...numberSet].length === 6) {
-      numberArray = [...numberSet];
-      projectArray = [
-        portfolio[numberArray[0]],
-        portfolio[numberArray[1]],
-        portfolio[numberArray[2]],
-        portfolio[numberArray[3]],
-        portfolio[numberArray[4]],
-        portfolio[numberArray[5]],
-      ];
-    }
+    let randomNumber = Math.floor(Math.random() * portfolio.length);
+    uniqueIndices.add(randomNumber);
   };
-  selectProjects();
+  while ([...uniqueIndices].length < 6) selectProjects();
+  let selectedIndices = [...uniqueIndices],
+    i = 0,
+    len = selectedIndices.length;
+  while (i < len) {
+    selectedProjects.push(portfolio[selectedIndices[i]]);
+    i++;
+  }
   return (
     <div className="relative w-full h-full flex flex-col justify-center items-center">
       <Image
@@ -46,7 +38,7 @@ export default function ProjectsSection() {
         </h1>
       </div>
       <div className="w-full flex flex-row flex-grow flex-wrap justify-evenly items-start m-0 p-0">
-        {projectArray.map((project) => {
+        {selectedProjects.map((project) => {
           const { src, alt, title, tools, description, repo, site } = project;
           return (
             <ProjectCard

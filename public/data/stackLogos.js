@@ -1,70 +1,82 @@
 export const stackLogos = [
   {
     tool: "HTML5",
-    src: "/html-1.svg",
+    src: "/public/images/icons/html-1.svg",
   },
   {
     tool: "CSS3",
-    src: "/icons8-css3.svg",
+    src: "/public/images/icons/icons8-css3.svg",
   },
   {
     tool: "SASS",
-    src: "/icons8-sass.svg",
+    src: "/public/images/icons/icons8-sass.svg",
+  },
+  {
+    tool: "BOOTSTRAP",
+    src: "/public/images/icons/icons8-bootstrap.svg",
   },
   {
     tool: "TAILWINDCSS",
-    src: "/tailwindcss.svg",
+    src: "/public/images/icons/tailwindcss.svg",
   },
   {
     tool: "JAVASCRIPT",
-    src: "/logo-javascript.svg",
+    src: "/public/images/icons/logo-javascript.svg",
   },
   {
     tool: "TYPESCRIPT",
-    src: "/typescript.svg",
-  },
-  {
-    tool: "REACT",
-    src: "/icons8-react.svg",
-  },
-  {
-    tool: "REDUX",
-    src: "/icons8-redux.svg",
-  },
-  {
-    tool: "NEXT",
-    src: "/next-js.svg",
-  },
-  {
-    tool: "GATSBY",
-    src: "/icons8-gatsbyjs.svg",
-  },
-  {
-    tool: "REACT NATIVE",
-    src: "/icons8-react-native.svg",
+    src: "/public/images/icons/typescript.svg",
   },
   {
     tool: "JQUERY",
-    src: "/icons8-jquery.svg",
+    src: "/public/images/icons/icons8-jquery.svg",
+  },
+  {
+    tool: "PHP",
+    src: "",
+  },
+  {
+    tool: "REACT",
+    src: "/public/images/icons/icons8-react.svg",
+  },
+  {
+    tool: "NEXT",
+    src: "/public/images/icons/next-js.svg",
+  },
+  {
+    tool: "REACT NATIVE",
+    src: "/public/images/icons/icons8-react-native.svg",
+  },
+  {
+    tool: "REDUX",
+    src: "/public/images/icons/icons8-redux.svg",
   },
   {
     tool: "GRAPHQL",
-    src: "/icons8-graphql.svg",
+    src: "/public/images/icons/icons8-graphql.svg",
+  },
+  {
+    tool: "TESTING-LIBRARY",
+    src: "/public/images/icons/testing-library.png",
   },
   {
     tool: "JEST",
-    src: "/jest-seeklogo.com.svg",
-  },
-  {
-    tool: "R-T-LIBRARY",
-    src: "/testing-library.png",
+    src: "/public/images/icons/jest-seeklogo.com.svg",
   },
   {
     tool: "CYPRESS",
-    src: "/cypress-js.svg",
+    src: "/public/images/icons/cypress-js.svg",
+  },
+  {
+    tool: "WORDPRESS",
+    src: "",
+  },
+  {
+    tool: "D3",
+    src: ""
   },
   {
     tool: "GIT",
-    src: "/icons8-git.svg",
+    src: "/public/images/icons/icons8-git.svg",
   },
 ];

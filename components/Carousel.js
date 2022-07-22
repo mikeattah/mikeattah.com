@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { nanoid } from "nanoid";
 import { portfolio } from "../public/data/portfolio";
 
 export default function Carousel() {
@@ -7,7 +8,10 @@ export default function Carousel() {
       {portfolio.map((item) => {
         const { src, alt } = item;
         return (
-          <div className="relative w-64 h-full carousel-item m-0 p-0">
+          <div
+            key={nanoid()}
+            className="relative w-64 h-full carousel-item m-0 p-0"
+          >
             <Image
               src={src}
               alt={alt}
