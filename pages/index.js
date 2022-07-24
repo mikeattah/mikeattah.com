@@ -1,14 +1,11 @@
 import Layout from "../components/Layout";
-import Carousel from "../components/Carousel";
-import Projects from "../components/Projects";
+// import Carousel from "../components/Carousel";
+// import Projects from "../components/Projects";
 
 export default function Home({ title, description, ...props }) {
   return (
     <Layout title={`${title} | Home`} description={description}>
-      <div className="w-[900px] min-h-min flex flex-col mt-[135px] border">
-        <Carousel />
-        <Projects />
-      </div>
+      <div className="w-full min-h-min flex flex-col border">HOME</div>
     </Layout>
   );
 }

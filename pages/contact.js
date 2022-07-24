@@ -10,7 +10,7 @@ export default function Contact({ title, description, ...props }) {
         <div className="p-1.5 flex flex-col justify-center items-center">
           <ContactIcon icon="" text="Abuja, Nigeria" />
           <ContactIcon icon="" text="+2347013194373" />
-          <ContactIcon icon="" text="mailmikeattah@gmail.com" />
+          <ContactIcon icon="" text="mailenemona@gmail.com" />
         </div>
         <form
           action=""
