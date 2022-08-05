@@ -1,7 +1,6 @@
 import Head from "next/head";
-// import Footer from "./Footer";
+import Footer from "./Footer";
 import NavBar from "./NavBar";
-// import SideBar from "./SideBar";
 
 export default function Layout({ children, title, description, ...props }) {
   return (
@@ -18,6 +17,7 @@ export default function Layout({ children, title, description, ...props }) {
       <div className="max-w-screen min-h-screen flex flex-col justify-center items-center overflow-y-auto">
         <NavBar />
         <main className="min-w-min min-h-min">{children}</main>
+        <Footer />
       </div>
     </>
   );

@@ -4,10 +4,10 @@ const securityHeaders = [
     key: "X-XSS-Protection",
     value: "1; mode=block",
   },
-  {
-    key: "Content-Security-Policy",
-    value: "script-src 'self' https://apis.google.com",
-  },
+  // {
+  //   key: "Content-Security-Policy",
+  //   value: "script-src 'self' https://apis.google.com",
+  // },
   {
     key: "X-Frame-Options",
     value: "SAMEORIGIN",

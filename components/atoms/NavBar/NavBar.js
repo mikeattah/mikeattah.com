@@ -1,4 +1,4 @@
-import NavIcon from "./NavIcon";
+import NavIcon from "../../NavIcon";
 
 export default function Navigation() {
   return (

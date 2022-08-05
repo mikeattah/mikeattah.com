@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { nanoid } from "nanoid";
-import { portfolio } from "../public/data/portfolio";
+import { portfolio } from "../../../public/data/portfolio";
 
 export default function Carousel() {
   return (
