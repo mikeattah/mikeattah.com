@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
 
-export default function Navicon({
+export default function NavIcon({
   
   pageName,
   pathName,

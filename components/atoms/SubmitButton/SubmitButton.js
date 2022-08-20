@@ -1,6 +1,6 @@
 import React from "react";
 
-function Services(props) {
+function SubmitButton(props) {
   return (
     <div>
       <div></div>
@@ -8,4 +8,4 @@ function Services(props) {
   );
 }
 
-export default Services;
+export default SubmitButton;

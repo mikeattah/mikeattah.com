@@ -1,16 +1,11 @@
 import React from "react";
 import Image from "next/image";
-// https://mikeattah.com/public
-
-import Layout from "../components/Layout";
 import CodeEditorIcon from "../components/CodeEditorIcon";
 import ProjectCard from "../components/ProjectCard";
-
 import { portfolio } from "../portfolio";
-
 import { nanoid } from "nanoid";
 
-export default function Projects({ title, description, ...props }) {
+function Projects(props) {
   const numberSet = new Set();
   let numberArray = [];
   let projectArray = [];
@@ -38,74 +33,62 @@ export default function Projects({ title, description, ...props }) {
   };
 
   selectProjects();
-  // Console.log(numberSet);
 
   return (
-    <Layout pageTitle={`${title} | Projects`}>
-      <div className="relative w-full h-full flex flex-col justify-center items-center">
-        <Image
-          alt="Background sky blue waves"
-          className="-z-10"
-          layout="fill"
-          objectFit="cover"
-          objectPosition="top left"
-          src="/fakurian-design-GJKx5lhwU3M-unsplash.jpg"
-        />
-        <div className="w-full h-16 flex flex-row justify-center items-center my-3">
-          <h1 className="text-black text-3xl sm:text-5xl md:text-5.5xl lg:text-5xl font-bold leading-tight font-pri m-0">
-            Some of{" "}
-            <span className="text-blue-600 text-3xl sm:text-5xl md:text-5.5xl lg:text-5xl font-bold leading-tight font-pri m-0">
-              my projects
-            </span>
-          </h1>
-        </div>
-        <div className="w-full flex flex-row flex-grow flex-wrap justify-evenly items-start m-0 p-0">
-          {projectArray.map((project, index) => {
-            const { src, alt, title, tools, description, repo, site } = project;
-
-            return (
-              <ProjectCard
-                alt={alt}
-                description={description}
-                key={nanoid()}
-                repo={repo}
-                site={site}
-                src={src}
-                title={title}
-                tools={tools}
-              />
-            );
-          })}
-        </div>
-        <div className="w-full h-16 flex flex-row justify-center items-start m-0 p-0">
-          <CodeEditorIcon
-            altName="Github"
-            hrefName="https://github.com/mikeattah"
-            srcName="/githubb.png"
-          />
-          <CodeEditorIcon
-            altName="Codepen"
-            hrefName="https://codepen.io/mikeattah"
-            srcName="/codepenn.png"
-          />
-          <CodeEditorIcon
-            altName="Codesandbox"
-            hrefName="https://codesandbox.io/u/mikeattah"
-            srcName="/codesandboxx.png"
-          />
-        </div>
+    <div className="relative w-full h-full flex flex-col justify-center items-center">
+      <Image
+        alt="Background sky blue waves"
+        className="-z-10"
+        layout="fill"
+        objectFit="cover"
+        objectPosition="top left"
+        src="/fakurian-design-GJKx5lhwU3M-unsplash.jpg"
+      />
+      <div className="w-full h-16 flex flex-row justify-center items-center my-3">
+        <h1 className="text-black text-3xl sm:text-5xl md:text-5.5xl lg:text-5xl font-bold leading-tight font-pri m-0">
+          Some of{" "}
+          <span className="text-blue-600 text-3xl sm:text-5xl md:text-5.5xl lg:text-5xl font-bold leading-tight font-pri m-0">
+            my projects
+          </span>
+        </h1>
       </div>
-    </Layout>
+      <div className="w-full flex flex-row flex-grow flex-wrap justify-evenly items-start m-0 p-0">
+        {projectArray.map((project, index) => {
+          const { src, alt, title, tools, description, repo, site } = project;
+
+          return (
+            <ProjectCard
+              alt={alt}
+              description={description}
+              key={nanoid()}
+              repo={repo}
+              site={site}
+              src={src}
+              title={title}
+              tools={tools}
+            />
+          );
+        })}
+      </div>
+      <div className="w-full h-16 flex flex-row justify-center items-start m-0 p-0">
+        <CodeEditorIcon
+          altName="Github"
+          hrefName="https://github.com/mikeattah"
+          srcName="/githubb.png"
+        />
+        <CodeEditorIcon
+          altName="Codepen"
+          hrefName="https://codepen.io/mikeattah"
+          srcName="/codepenn.png"
+        />
+        <CodeEditorIcon
+          altName="Codesandbox"
+          hrefName="https://codesandbox.io/u/mikeattah"
+          srcName="/codesandboxx.png"
+        />
+      </div>
+    </div>
   );
 }
 
-export async function getStaticProps() {
-  const configData = await import("../siteConfig.json");
-
-  return {
-    props: {
-      title: configData.default.title,
-      description: configData.default.description,
-    },
-  };
-}
+export default Projects;

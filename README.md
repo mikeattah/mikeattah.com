@@ -51,3 +51,7 @@ Follow me on [Twitter](https://twitter.com/mikeattahh) for titbits on my develop
   - useRouter()
   - getStaticProps()
 - nanoid()
+
+## Credits
+
+- My website is powered by [Vercel](https://www.vercel.com/), [Next.js](https://nextjs.org/) & [GitHub](https://github.com/)

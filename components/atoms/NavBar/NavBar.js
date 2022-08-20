@@ -1,6 +1,6 @@
-import NavIcon from "../../NavIcon";
+import NavIcon from "../NavIcon/NavIcon";
 
-export default function Navigation() {
+export default function NavBar() {
   return (
     <nav className="w-full h-[90px] flex flex-row justify-center align-center sm:border-b-2 shadow-md z-10 border">
       <div className="">
