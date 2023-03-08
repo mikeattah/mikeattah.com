@@ -1,22 +1,24 @@
-import Image from "next/image";
+import Image from 'next/image';
 
-export default function CodeEditorIcon({ href, src, alt }) {
+function CodeEditorIcon({ href, src, alt }) {
   return (
     <a
-      className="relative w-10 h-10 mx-3 rounded-full ring-4 ring-white shadow-lg"
+      className='relative w-10 h-10 mx-3 rounded-full ring-4 ring-white shadow-lg'
       href={href}
-      rel="noreferrer"
-      target="_blank"
+      rel='noreferrer'
+      target='_blank'
     >
       <Image
         alt={alt}
-        className="rounded-full"
-        layout="fill"
-        objectFit="cover"
-        objectPosition="50% 50%"
+        className='rounded-full'
+        layout='fill'
+        objectFit='cover'
+        objectPosition='50% 50%'
         src={src}
         title={alt}
       />
     </a>
   );
 }
+
+export default CodeEditorIcon;

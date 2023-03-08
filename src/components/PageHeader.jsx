@@ -1,4 +1,4 @@
-export default function PageHeader({ page }) {
+function PageHeader({ page }) {
   return (
     <div className="w-full h-full flex flex-col justify-center items-center">
       {/* Dark Blue Pattern */}
@@ -6,3 +6,5 @@ export default function PageHeader({ page }) {
     </div>
   );
 }
+
+export default PageHeader;

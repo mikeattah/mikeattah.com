@@ -1,9 +1,4 @@
-import Layout from "components/templates";
-import About from "components/templates";
-import Contact from "components/templates";
-import Home from "components/templates";
-import Projects from "components/templates";
-// import Services from "components/templates";
+import { About, Contact, Home, Layout, Projects } from 'components/templates';
 
 export default function Index({ title, description, ...props }) {
   return (
@@ -19,7 +14,7 @@ export default function Index({ title, description, ...props }) {
 }
 
 export async function getStaticProps() {
-  const configData = await import("../../siteConfig.json");
+  const configData = await import('../../siteConfig.json');
 
   return {
     props: {

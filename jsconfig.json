@@ -1,15 +1,16 @@
 {
   "compilerOptions": {
-    "baseUrl": "./src",
+    "baseUrl": ".",
+    "paths": {
+      "@components/*": ["src/components/*"],
+      "@pages/*": ["src/pages/*"],
+      "@styles/*": ["src/styles/*"]
+    },
     "target": "es6",
     "moduleResolution": "node"
   },
-  "exclude": [
-    "node_modules"
-  ],
+  "exclude": ["node_modules"],
   "typeAcquisition": {
-    "include": [
-      "jest"
-    ]
+    "include": ["jest"]
   }
 }

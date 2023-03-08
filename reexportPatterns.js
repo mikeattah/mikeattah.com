@@ -1,18 +1,18 @@
-module.exports = [
+export default [
   {
-    test: /components\/atoms\/index\.js/,
+    test: /components\/atoms\/index\.jsx/,
     sideEffects: false,
   },
   {
-    test: /components\/molecules\/index\.js/,
+    test: /components\/molecules\/index\.jsx/,
     sideEffects: false,
   },
   {
-    test: /components\/organisms\/index\.js/,
+    test: /components\/organisms\/index\.jsx/,
     sideEffects: false,
   },
   {
-    test: /components\/templates\/index\.js/,
+    test: /components\/templates\/index\.jsx/,
     sideEffects: false,
   },
 ];

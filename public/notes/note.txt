@@ -1,3 +1,20 @@
+* remove bootstrap & react-bootstrap
+* switch from daisyui to embla carousel
+* ContactButton => ButtonTypeOne
+* ResumeButton => ButtonTypeTwo
+* SubmitButton => ButtonTypeThree
+* ContactIcon => IconTypeOne
+* NavIcon => IconTypeTwo
+* 'Back to Top Icon' => IconTypeThree
+* 'Page Count Icon' => IconTypeFour
+* SocialMediaIcon => IconTypeThree
+* NavBar => Navigation
+
+* templates:
+  * https://w3layouts.com/template-category/personal/page/2/
+
+
+*********************************************************************************************
 <a
 className={styles.resumebutton}
 href="/mike_attah_resume_ncl_005.pdf"
@@ -7,8 +24,6 @@ download
 <span className={styles.resumetext}>Resume</span>
 </a>
 {/* <FontAwesomeIcon icon={faHome} className={styles.icons} /> */}
-
-Remove bootstrap & react-bootstrap
 
 // import styles from "./layout.module.scss";
 
