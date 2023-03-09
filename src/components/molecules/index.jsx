@@ -1,4 +1,2 @@
-export { default as BlogCard } from './BlogCard/BlogCard';
-export { default as HobbyCard } from './HobbyCard/HobbyCard';
-export { default as ProjectCard } from './ProjectCard/ProjectCard';
-export { default as SkillCard } from './SkillCard/SkillCard';
+export { default as Footer } from './Footer/Footer';
+export { default as Navigation } from './Navigation/Navigation';

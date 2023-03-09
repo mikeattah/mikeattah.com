@@ -1,4 +1,4 @@
-import NavIcon from "../NavIcon/NavIcon";
+import NavIcon from "../../atoms/icons/DafaultIcon/DefaultIcon";
 
 function NavBar() {
   return (

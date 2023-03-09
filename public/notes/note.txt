@@ -1,14 +1,22 @@
 * remove bootstrap & react-bootstrap
 * switch from daisyui to embla carousel
-* ContactButton => ButtonTypeOne
-* ResumeButton => ButtonTypeTwo
-* SubmitButton => ButtonTypeThree
-* ContactIcon => IconTypeOne
-* NavIcon => IconTypeTwo
-* 'Back to Top Icon' => IconTypeThree
-* 'Page Count Icon' => IconTypeFour
-* SocialMediaIcon => IconTypeThree
+* ContactButton => HighlightButton
+* ResumeButton => DefaultButton
+* SubmitButton => AlternativeButton
+* ContactIcon => HighlightIcon
+* NavIcon => DefaultIcon
+* 'Back to Top Icon' => AlternativeIcon
+* 'Page Count Icon' => SubtleIcon
+* SocialMediaIcon => AlternativeIcon
 * NavBar => Navigation
+* BlogCard => HighlightCard
+* ProjectCard => DefaultCard
+* HobbyCard => AlternativeCard
+* SkillCard => SubtleCard
+
+* learning:
+  * https://nextjs.org/learn/foundations/about-nextjs/what-is-nextjs
+  * https://storybook.js.org/tutorials/intro-to-storybook/react/en/get-started/
 
 * templates:
   * https://w3layouts.com/template-category/personal/page/2/
