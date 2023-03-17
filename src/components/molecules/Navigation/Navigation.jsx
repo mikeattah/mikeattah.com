@@ -4,7 +4,7 @@ function NavBar() {
   return (
     <nav className="w-full h-[90px] flex flex-row justify-center align-center sm:border-b-2 shadow-md z-10 border">
       <div className="">
-        <span className="">mikeattah[h]</span>
+        <p className=""><span className="">@</span>mikeattah<span className="">[</span>h<span className="">]</span></p>
       </div>
       <div className="">
         <NavIcon pageName="Home" pathName="/" />

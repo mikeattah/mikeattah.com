@@ -14,15 +14,19 @@
 * HobbyCard => AlternativeCard
 * SkillCard => SubtleCard
 
-* learning:
-  * https://nextjs.org/learn/foundations/about-nextjs/what-is-nextjs
-  * https://storybook.js.org/tutorials/intro-to-storybook/react/en/get-started/
+* tools:
+  * Next.js:
+    * https://nextjs.org/learn/foundations/from-javascript-to-react/adding-interactivity-with-state
+  * Storybook.js:
+    * ./taskbox
+    * https://storybook.js.org/tutorials/intro-to-storybook/react/en/get-started/
+    * https://github.com/chromaui/intro-storybook-react-template/blob/master/package.json
 
 * templates:
-  * https://w3layouts.com/template-category/personal/page/2/
+  * https://w3layouts.com/template-category/personal/page/11/
+    * https://w3layouts.com/template/sam-folio-onepage-portfolio-flat-bootstrap-responsive-web-template/
 
-
-*********************************************************************************************
+********************************************************************************************************
 <a
 className={styles.resumebutton}
 href="/mike_attah_resume_ncl_005.pdf"
