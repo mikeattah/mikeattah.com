@@ -1,14 +1,20 @@
-import { About, Contact, Home, Layout, Projects } from 'components/templates';
+import {
+  About,
+  Contact,
+  Home,
+  Layout,
+  Projects,
+  Services,
+} from 'components/templates';
 
 export default function Index({ title, description, ...props }) {
   return (
-    <Layout pageDescription={description} pageTitle={title}>
-      {/*
+    <Layout description={description} title={title}>
       <Home />
       <About />
       <Projects />
+      <Services />
       <Contact />
-      */}
     </Layout>
   );
 }

@@ -1,12 +1,12 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { nanoid } from 'nanoid';
-import ResumeButton from 'components/atoms';
-import { SkillCard, HobbyCard } from 'components/molecules';
+import { Button } from 'components/atoms';
+import { Card } from 'components/molecules';
 import { stackLogos } from '/public/data/stackLogos';
 import { hobbies } from '/public/data/hobbies';
 
-function About(props) {
+function About() {
   return (
     <div className='relative w-full h-full flex flex-col justify-between items-center m-0 p-0'>
       <Image
@@ -74,12 +74,14 @@ function About(props) {
             {stackLogos.map((stack, index) => {
               const { tool, src } = stack;
 
-              return <SkillCard key={nanoid()} src={src} tool={tool} />;
+              return (
+                <Card key={nanoid()} src={src} tool={tool} cardType='subtle' />
+              );
             })}
           </div>
           {/* Resume */}
           <div className='w-full max-h-24 flex flex-row justify-center items-center m-0 p-0'>
-            <ResumeButton />
+            <Button name='Resume' buttonType='default' />
           </div>
         </div>
       </div>
@@ -97,7 +99,9 @@ function About(props) {
           {hobbies.map((hobby, index) => {
             const { src, alt } = hobby;
 
-            return <HobbyCard key={nanoid()} src={src} alt={alt} />;
+            return (
+              <Card key={nanoid()} src={src} alt={alt} cardType='alternative' />
+            );
           })}
         </div>
       </div>
