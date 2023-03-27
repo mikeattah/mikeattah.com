@@ -1,8 +1,8 @@
-function Services(props) {
+function Services() {
   return (
-    <div>
-      <div></div>
-    </div>
+    <section className='w-100 min-h-[720px] border flex flex-col justify-center items-center'>
+      <p className='blue'>Services</p>
+    </section>
   );
 }
 

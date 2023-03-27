@@ -1,10 +1,10 @@
-function SubmitButton({ buttonType }) {
+function Button({ buttonType }) {
   if (buttonType === 'primary') {
-    return <button></button>;
+    return <button>Primary</button>;
   } else if (buttonType === 'secondary') {
-    return <button></button>;
+    return <button>Secondary</button>;
   }
-  return <button></button>;
+  return <button>Tertiary</button>;
 }
 
-export default SubmitButton;
+export default Button;

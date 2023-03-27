@@ -5,9 +5,9 @@ import {
   Layout,
   Projects,
   Services,
-} from 'components/templates';
+} from '@components/templates';
 
-export default function Index({ title, description, ...props }) {
+export default function Index({ title, description }) {
   return (
     <Layout description={description} title={title}>
       <Home />

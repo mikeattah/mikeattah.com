@@ -1,7 +1,7 @@
-function Footer(props) {
+function Footer() {
   return (
-    <footer className="w-[900px] h-[90px] flex flex-row border">
-      <div></div>
+    <footer className='w-100 h-[90px] border flex flex-col justify-center items-center'>
+      <p className='blue'>Footer</p>
     </footer>
   );
 }
