@@ -1,18 +1,18 @@
 export default [
   {
-    test: /components\/atoms\/index\.jsx/,
+    test: /src\/components\/atoms\/index\.jsx/,
     sideEffects: false,
   },
   {
-    test: /components\/molecules\/index\.jsx/,
+    test: /src\/components\/molecules\/index\.jsx/,
     sideEffects: false,
   },
   {
-    test: /components\/organisms\/index\.jsx/,
+    test: /src\/components\/organisms\/index\.jsx/,
     sideEffects: false,
   },
   {
-    test: /components\/templates\/index\.jsx/,
+    test: /src\/components\/templates\/index\.jsx/,
     sideEffects: false,
   },
 ];

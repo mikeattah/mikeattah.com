@@ -1,7 +1,8 @@
 {
   "name": "mikeattah.com",
-  "version": "0.1.0",
+  "version": "2.0.0",
   "private": true,
+  "description": "Michael Attah's portfolio website",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -12,12 +13,18 @@
     "analyze:server": "cross-env BUNDLE_ANALYZE=server next build",
     "analyze:browser": "cross-env BUNDLE_ANALYZE=browser next build"
   },
+  "keywords": [
+    "react.js",
+    "next.js"
+  ],
+  "author": "Michael Attah (mailenemona@gmail.com)",
+  "license": "MIT",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
     "@fortawesome/free-brands-svg-icons": "^5.15.4",
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
     "@fortawesome/react-fontawesome": "^0.1.15",
-    "@svgr/webpack": "^5.5.0",
+    "@svgr/webpack": "^6.0.0",
     "@types/react-fontawesome": "^1.6.5",
     "daisyui": "^1.16.2",
     "nanoid": "^3.1.28",
@@ -26,7 +33,7 @@
     "react-dom": "^17.0.2",
     "sass": "^1.37.5",
     "sass-loader": "^12.1.0",
-    "sharp": "^0.29.3"
+    "sharp": "^0.30.5"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.21.3",

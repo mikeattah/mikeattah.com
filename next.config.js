@@ -1,20 +1,16 @@
-const path = require("path");
+const path = require('path');
 const securityHeaders = [
   {
-    key: "X-XSS-Protection",
-    value: "1; mode=block",
-  },
-  // {
-  //   key: "Content-Security-Policy",
-  //   value: "script-src 'self' https://apis.google.com",
-  // },
-  {
-    key: "X-Frame-Options",
-    value: "SAMEORIGIN",
+    key: 'X-XSS-Protection',
+    value: '1; mode=block',
   },
   {
-    key: "X-Content-Type-Options",
-    value: "nosniff",
+    key: 'X-Frame-Options',
+    value: 'SAMEORIGIN',
+  },
+  {
+    key: 'X-Content-Type-Options',
+    value: 'nosniff',
   },
 ];
 
@@ -22,15 +18,15 @@ module.exports = {
   compress: true,
   reactStrictMode: true,
   sassOptions: {
-    includePaths: [path.join(__dirname, "styles")],
+    includePaths: [path.join(__dirname, 'styles')],
   },
   images: {
-    domains: ["img.icons8.com", "img.shields.io"],
+    domains: ['img.icons8.com', 'img.shields.io'],
   },
   webpack(config) {
     config.module.rules.push({
       test: /\.svg$/,
-      use: ["@svgr/webpack"],
+      use: ['@svgr/webpack'],
     });
     return config;
   },
@@ -38,7 +34,7 @@ module.exports = {
     return [
       {
         // Apply these headers to all routes in your application.
-        source: "/(.*)",
+        source: '/(.*)',
         headers: securityHeaders,
       },
     ];

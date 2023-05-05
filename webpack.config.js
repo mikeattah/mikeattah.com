@@ -1,4 +1,4 @@
-import reexportPatterns from './reexportPatterns';
+import reExportPatterns from './reExportPatterns';
 
 module.exports = {
   module: {
@@ -14,7 +14,7 @@ module.exports = {
           'sass-loader',
         ],
       },
-      ...reexportPatterns,
+      ...reExportPatterns,
     ],
   },
 };
