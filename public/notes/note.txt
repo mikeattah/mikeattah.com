@@ -16,8 +16,8 @@
 
 * pages:
   * index
-  * login - access via link only | https://mikeattah.com/login
-  * admin - access via link only | https://mikeattah.com/admin
+  * login - Authentication | access via link only | https://mikeattah.com/login
+  * admin - dashboard | access via link only | https://mikeattah.com/admin
 
 * tools:
   * Next.js:

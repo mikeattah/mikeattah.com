@@ -2,11 +2,20 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
-function Icon({ icon, text, href, src, alt, pageName, pathName, iconType }) {
+export const Icon = ({
+  icon,
+  text,
+  href,
+  src,
+  alt,
+  pageName,
+  pathName,
+  iconType,
+}) => {
   const router = useRouter();
   if (iconType === 'highlight') {
     return (
-      <div className='w-[33%] h-full flex flex-col'>
+      <div className='flex h-full w-[33%] flex-col'>
         <i>{icon}</i>
         <p>{text}</p>
       </div>
@@ -17,8 +26,8 @@ function Icon({ icon, text, href, src, alt, pageName, pathName, iconType }) {
         <a
           className={
             router.pathname === pathName
-              ? 'font-bold font-ter text-blue-600 w-1/4 sm:w-3/25 h-full flex flex-col justify-center items-center hover:bg-gray-100'
-              : 'font-ter text-black w-1/4 sm:w-3/25 h-full flex flex-col justify-center items-center  hover:bg-gray-100'
+              ? 'flex h-full w-1/4 flex-col items-center justify-center font-ter font-bold text-blue-600 hover:bg-gray-100 sm:w-3/25'
+              : 'flex h-full w-1/4 flex-col items-center justify-center font-ter text-black hover:bg-gray-100  sm:w-3/25'
           }
         >
           {pageName}
@@ -30,7 +39,7 @@ function Icon({ icon, text, href, src, alt, pageName, pathName, iconType }) {
   }
   return (
     <a
-      className='relative w-10 h-10 mx-3 rounded-full ring-4 ring-white shadow-lg'
+      className='relative mx-3 h-10 w-10 rounded-full shadow-lg ring-4 ring-white'
       href={href}
       rel='noreferrer'
       target='_blank'
@@ -46,6 +55,4 @@ function Icon({ icon, text, href, src, alt, pageName, pathName, iconType }) {
       />
     </a>
   );
-}
-
-export default Icon;
+};

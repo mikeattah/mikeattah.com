@@ -1,17 +1,17 @@
-import { useEffect } from "react";
-import { animate, stack } from "./StackAnimation.module.scss";
+import { useEffect } from 'react';
+import { animate, stack } from './StackAnimation.module.scss';
 
-function StackAnimation({ stackList }) {
+export const StackAnimation = ({ stackList }) => {
   useEffect(() => {
     let i = 0;
-    const stack = document.querySelector(".stackitem");
+    const stack = document.querySelector('.stackitem');
     setInterval(() => {
       while (stack.firstChild) {
         stack.removeChild(stack.firstChild);
       }
-      stackList[i].split("").forEach((letter) => {
-        const letterElement = document.createElement("span");
-        letterElement.innerHTML = letter === " " ? "&nbsp;" : letter;
+      stackList[i].split('').forEach(letter => {
+        const letterElement = document.createElement('span');
+        letterElement.innerHTML = letter === ' ' ? '&nbsp;' : letter;
         stack.appendChild(letterElement);
       });
       i++;
@@ -23,11 +23,9 @@ function StackAnimation({ stackList }) {
   }, [stackList]);
   return (
     <div
-      className={`${animate} ${stack} stackitem text-2xl sm:text-3xl lg:text-3xl font-sec`}
+      className={`${animate} ${stack} stackitem font-sec text-2xl sm:text-3xl lg:text-3xl`}
     >
       <span>MY STACK</span>
     </div>
   );
-}
-
-export default StackAnimation;
+};

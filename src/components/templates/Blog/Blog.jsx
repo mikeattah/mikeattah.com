@@ -1,9 +1,7 @@
-function Blog(props) {
+export default function Blog() {
   return (
-    <div>
-      <div></div>
-    </div>
+    <section className='w-100 flex min-h-[720px] flex-col items-center justify-center border'>
+      <p className='blue'>Blog</p>
+    </section>
   );
 }
-
-export default Blog;

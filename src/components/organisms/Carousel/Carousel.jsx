@@ -2,15 +2,15 @@ import Image from 'next/image';
 import { nanoid } from 'nanoid';
 import { portfolio } from '/public/data/portfolio';
 
-function Carousel() {
+export const Carousel = () => {
   return (
-    <div className='w-full h-[900px] border'>
+    <div className='h-[900px] w-full border'>
       {portfolio.map(item => {
         const { src, alt } = item;
         return (
           <div
             key={nanoid()}
-            className='relative w-64 h-full carousel-item m-0 p-0'
+            className='carousel-item relative m-0 h-full w-64 p-0'
           >
             <Image
               src={src}
@@ -20,13 +20,11 @@ function Carousel() {
               objectFit='cover'
               objectPosition='center'
             />
-            <div className='absolute w-full h-full'></div>
+            <div className='absolute h-full w-full'></div>
           </div>
         );
       })}
       <div></div>
     </div>
   );
-}
-
-export default Carousel;
+};

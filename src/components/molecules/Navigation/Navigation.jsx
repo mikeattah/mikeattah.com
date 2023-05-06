@@ -1,9 +1,9 @@
 import { nanoid } from 'nanoid';
 
-function Navigation() {
+export const Navigation = () => {
   const navagationList = ['Home', 'About', 'Projects', 'Services', 'Contact'];
   return (
-    <nav className='w-full h-[90px] flex flex-row justify-center align-center sm:border-b-2 shadow-md z-10 border'>
+    <nav className='align-center z-10 flex h-[90px] w-full flex-row justify-center border shadow-md sm:border-b-2'>
       <div className=''>
         <p className=''>
           <span className=''>&#64;</span>mikeattah
@@ -23,6 +23,4 @@ function Navigation() {
       </div>
     </nav>
   );
-}
-
-export default Navigation;
+};

@@ -1,9 +1,7 @@
-function Clients(props) {
+export default function Clients() {
   return (
-    <div>
-      <div></div>
-    </div>
+    <section className='w-100 flex min-h-[720px] flex-col items-center justify-center border'>
+      <p className='blue'>Clients</p>
+    </section>
   );
 }
-
-export default Clients;

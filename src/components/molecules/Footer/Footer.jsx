@@ -1,9 +1,7 @@
-function Footer() {
+export const Footer = () => {
   return (
-    <footer className='w-100 h-[90px] border flex flex-col justify-center items-center'>
+    <footer className='w-100 flex h-[90px] flex-col items-center justify-center border'>
       <p className='blue'>Footer</p>
     </footer>
   );
-}
-
-export default Footer;
+};

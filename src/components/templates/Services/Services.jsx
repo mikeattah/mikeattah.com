@@ -1,9 +1,7 @@
-function Services() {
+export default function Services() {
   return (
-    <section className='w-100 min-h-[720px] border flex flex-col justify-center items-center'>
+    <section className='w-100 flex min-h-[720px] flex-col items-center justify-center border'>
       <p className='blue'>Services</p>
     </section>
   );
 }
-
-export default Services;

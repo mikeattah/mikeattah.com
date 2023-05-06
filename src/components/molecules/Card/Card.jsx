@@ -1,9 +1,18 @@
 import Image from 'next/image';
 
-function Card({ src, alt, cardType }) {
+export const Card = ({
+  src,
+  alt,
+  title,
+  tools,
+  description,
+  repo,
+  site,
+  cardType,
+}) => {
   if (cardType === 'highlight') {
     return (
-      <div className='relative w-64 h-full carousel-item m-0 p-0'>
+      <div className='carousel-item relative m-0 h-full w-64 p-0'>
         <Image
           alt={alt}
           className='rounded-xl'
@@ -16,38 +25,38 @@ function Card({ src, alt, cardType }) {
     );
   } else if (cardType === 'default') {
     return (
-      <div className='w-11/12 sm:w-120 max-h-200 mx-0 mt-0 mb-7 p-0 rounded-2xl shadow-lg transform hover:shadow-2xl z-50'>
-        <div className='relative w-full h-60'>
+      <div className='max-h-200 z-50 mx-0 mb-7 mt-0 w-11/12 transform rounded-2xl p-0 shadow-lg hover:shadow-2xl sm:w-120'>
+        <div className='relative h-60 w-full'>
           <Image
             alt={alt}
-            className='rounded-tr-2xl rounded-tl-2xl'
+            className='rounded-tl-2xl rounded-tr-2xl'
             layout='fill'
             objectFit='cover'
             objectPosition='50% 50%'
             src={src}
           />
         </div>
-        <div className='w-full max-h-112 flex flex-col justify-start items-center bg-white rounded-b-2xl m-0 pt-2 px-1.5'>
-          <div className='w-full max-h-96 flex flex-col justify-start items-center'>
-            <h2 className='text-blue-600 font-bold text-center text-2xl sm:text-2.5xl font-sec my-0.5'>
+        <div className='max-h-112 m-0 flex w-full flex-col items-center justify-start rounded-b-2xl bg-white px-1.5 pt-2'>
+          <div className='flex max-h-96 w-full flex-col items-center justify-start'>
+            <h2 className='my-0.5 text-center font-sec text-2xl font-bold text-blue-600 sm:text-2.5xl'>
               {title}
             </h2>
-            <p className='text-black text-center font-ter my-0.5'>
+            <p className='my-0.5 text-center font-ter text-black'>
               {description}
             </p>
-            <p className='text-blue-600 text-center font-ter my-0.5'>
+            <p className='my-0.5 text-center font-ter text-blue-600'>
               Tools: {tools}
             </p>
           </div>
-          <div className='w-full h-16 flex flex-row justify-evenly items-center m-0 p-0'>
+          <div className='m-0 flex h-16 w-full flex-row items-center justify-evenly p-0'>
             <a
-              className='text-blue-600 hover:text-white hover:bg-blue-600 font-bold border-blue-600 border-2 rounded-xl py-1 px-4 font-ter'
+              className='rounded-xl border-2 border-blue-600 px-4 py-1 font-ter font-bold text-blue-600 hover:bg-blue-600 hover:text-white'
               href={repo}
             >
               View Repo
             </a>
             <a
-              className='text-blue-600 hover:text-white hover:bg-blue-600 font-bold border-blue-600 border-2 rounded-xl py-1 px-4 font-ter'
+              className='rounded-xl border-2 border-blue-600 px-4 py-1 font-ter font-bold text-blue-600 hover:bg-blue-600 hover:text-white'
               href={site}
             >
               Live Site
@@ -58,10 +67,10 @@ function Card({ src, alt, cardType }) {
     );
   } else if (cardType === 'alternative') {
     return (
-      <div className='relative w-64 h-full carousel-item m-0 p-0'>
+      <div className='carousel-item relative m-0 h-full w-64 p-0'>
         <Image
           alt={alt}
-          className='rounded-xl'
+          className='rounded'
           layout='fill'
           objectFit='cover'
           objectPosition='center'
@@ -72,11 +81,9 @@ function Card({ src, alt, cardType }) {
   }
 
   return (
-    <div className='w-18 h-18 flex flex-col justify-evenly items-center bg-white border hover:border-2 border-blue-600 font-black rounded-2xl text-xxs font-ter text-black m-2 p-0'>
-      <Image src={src} alt={tool} height='28' width='28' />
-      <span>{tool}</span>
+    <div className='m-2 flex h-18 w-18 flex-col items-center justify-evenly rounded-2xl border border-blue-600 bg-white p-0 font-ter text-xxs font-black text-black hover:border-2'>
+      <Image src={src} alt={tools} height='28' width='28' />
+      <span>{tools}</span>
     </div>
   );
-}
-
-export default Card;
+};
